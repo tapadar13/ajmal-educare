@@ -9,6 +9,7 @@ import MissionVisionSection from '@/components/sections/MissionVisionSection'
 import WhyChooseSection from '@/components/sections/WhyChooseSection'
 import MethodologySection from '@/components/sections/MethodologySection'
 import NewsSection from '@/components/sections/NewsSection'
+import LeadershipSection from '@/components/sections/LeadershipSection'
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <MissionVisionSection />
-        {/* <LeadershipSection /> */}
+        <LeadershipSection />
         <WhyChooseSection />
         <MethodologySection />
         <CTASection />
