@@ -227,7 +227,7 @@ const NewsSection = () => {
             {/* First News Item */}
             <div className="lg:col-span-2" ref={firstNewsRef}>
               {newsItems[0] && (
-                <Card className="group hover:border-gray-300 transition-all duration-300 border border-gray-200 bg-white overflow-hidden rounded-xl p-0 py-0 gap-0">
+                <Card className="group hover:border-gray-300 transition-all duration-300 border-1 border-gray-200 bg-white overflow-hidden rounded-xl p-0 py-0 gap-0 shadow-none">
                   <CardContent className="p-0">
                     <div className="flex flex-col md:flex-row h-full">
                       {/* Image */}
@@ -267,7 +267,7 @@ const NewsSection = () => {
 
             {/* Upcoming Events spans two rows */}
             <div ref={eventsRef} className="lg:row-span-2 h-full" style={{ height: rightPanelHeight ? `${rightPanelHeight}px` : 'auto' }}>
-              <Card className="border border-gray-200 bg-white sticky top-8 rounded-xl h-full">
+              <Card className="border-2 border-gray-200 bg-white sticky top-8 rounded-xl h-full shadow-none">
                 <CardContent className="px-4 py-2 h-full flex flex-col">
                   <div className="flex items-center mb-3">
                     <div className="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center mr-3">
@@ -301,7 +301,7 @@ const NewsSection = () => {
             {/* Second News Item */}
             <div className="lg:col-span-2" ref={secondNewsRef}>
               {newsItems[1] && (
-                <Card className="group hover:border-gray-300 transition-all duration-300 border border-gray-200 bg-white overflow-hidden rounded-xl p-0 py-0 gap-0">
+                <Card className="group hover:border-gray-300 transition-all duration-300 border-2 border-gray-200 bg-white overflow-hidden rounded-xl p-0 py-0 gap-0 shadow-none">
                   <CardContent className="p-0">
                     <div className="flex flex-col md:flex-row h-full">
                       {/* Image */}
@@ -364,7 +364,7 @@ const NewsSection = () => {
                 {videos.map((item, index) => (
                   <CarouselItem key={index} className={cn("basis-full sm:basis-1/2 lg:basis-1/3")}> 
                     <a href={item.url} target="_blank" rel="noopener noreferrer">
-                      <Card className="group hover:border-gray-300 transition-all duration-300 border border-gray-200 bg-white overflow-hidden rounded-xl p-0 py-0 gap-0">
+                      <Card className="group hover:border-gray-300 transition-all duration-300 border-2 border-gray-200 bg-white overflow-hidden rounded-xl p-0 py-0 gap-0 shadow-none">
                         <CardContent className="p-0">
                           <div className="relative aspect-video bg-gray-100 overflow-hidden">
                             {/* Video thumbnail image */}
