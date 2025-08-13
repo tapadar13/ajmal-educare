@@ -82,13 +82,13 @@ export default function Super40Page() {
               <div className="relative rounded-2xl lg:col-span-2">
                 <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
                 <Card className="relative z-0 rounded-[inherit] h-full shadow-none">
-                  <CardHeader className="flex items-center gap-3">
+                  <CardHeader className="flex items-center gap-3 pt-6">
                     <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">
                       {GradientIcon({ Icon: Award, id: 'card-award' })}
                     </div>
                   <CardTitle className="text-gray-900">Proven Academic Success</CardTitle>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="pb-6">
                   <CardDescription className="text-gray-600">
                     With 1400+ NEET/JEE selections, our results speak volumes. We consistently nurture students into
                     doctors and engineers through structured coaching and expert guidance.
@@ -100,13 +100,13 @@ export default function Super40Page() {
               <div className="relative rounded-2xl lg:col-span-2">
                 <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
                 <Card className="relative z-0 rounded-[inherit] h-full shadow-none">
-                  <CardHeader className="flex items-center gap-3">
+                  <CardHeader className="flex items-center gap-3 pt-6">
                     <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">
                       {GradientIcon({ Icon: ClipboardList, id: 'card-tests' })}
                     </div>
                     <CardTitle className="text-gray-900">Weekly Mock Tests &amp; Detailed Analysis</CardTitle>
                   </CardHeader>
-                <CardContent>
+                <CardContent className="pb-6">
                   <CardDescription className="text-gray-600">
                     We simulate real NEET/JEE conditions every week. Tests are followed by in depth analysis and
                     tailored feedback, helping students overcome weaknesses and steadily build exam confidence.
@@ -118,13 +118,13 @@ export default function Super40Page() {
               <div className="relative rounded-2xl lg:col-span-2">
                 <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
                 <Card className="relative z-0 rounded-[inherit] h-full shadow-none">
-                  <CardHeader className="flex items-center gap-3">
+                  <CardHeader className="flex items-center gap-3 pt-6">
                     <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">
                       {GradientIcon({ Icon: MessageSquare, id: 'card-msg' })}
                     </div>
                   <CardTitle className="text-gray-900">Individualized Doubt Sessions</CardTitle>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="pb-6">
                   <CardDescription className="text-gray-600">
                     Our teachers are available around the clock for one-on-one doubt resolution, ensuring personalized
                     attention and academic clarity for each student.
@@ -136,13 +136,13 @@ export default function Super40Page() {
               <div className="relative rounded-2xl lg:col-span-2 lg:col-start-2">
                 <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
                 <Card className="relative z-0 rounded-[inherit] h-full shadow-none">
-                  <CardHeader className="flex items-center gap-3">
+                  <CardHeader className="flex items-center gap-3 pt-6">
                     <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">
                       {GradientIcon({ Icon: BookOpen, id: 'card-book' })}
                     </div>
                   <CardTitle className="text-gray-900">Focused Teaching for Board &amp; Entrance Exams</CardTitle>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="pb-6">
                   <CardDescription className="text-gray-600">
                     We prepare Class XI and XII students for board exams concurrently with NEET/JEE, avoiding
                     academic mismatches and maximizing time efficiency.
@@ -154,13 +154,13 @@ export default function Super40Page() {
               <div className="relative rounded-2xl lg:col-span-2">
                 <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
                 <Card className="relative z-0 rounded-[inherit] h-full shadow-none">
-                  <CardHeader className="flex items-center gap-3">
+                  <CardHeader className="flex items-center gap-3 pt-6">
                     <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">
                       {GradientIcon({ Icon: Heart, id: 'card-heart' })}
                     </div>
                   <CardTitle className="text-gray-900">Holistic Mentorship &amp; Motivation</CardTitle>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="pb-6">
                   <CardDescription className="text-gray-600">
                     From motivational sessions to performance tracking, students receive emotional and academic
                     support throughout their journey.
