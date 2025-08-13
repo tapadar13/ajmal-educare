@@ -1,0 +1,119 @@
+"use client";
+
+import { Badge } from '@/components/ui/badge'
+import { MagicCard } from '@/components/magicui/magic-card'
+import { AnimatedShinyText } from '@/components/magicui/animated-shiny-text'
+
+const MethodologySection = () => {
+  const methodologies = [
+    {
+      number: "01",
+      title: "Personalized Mentoring & Doubt Resolution",
+      description: "One-on-one mentoring, doubt-clearing sessions, and personalized counseling to help students overcome individual challenges and stay on track with their academic goals.",
+      gradient: "from-blue-500/20 to-purple-500/20"
+    },
+    {
+      number: "02", 
+      title: "Weekly Tests & Performance Tracking",
+      description: "Comprehensive weekly tests, mock exams, and monthly assessments with detailed progress tracking and analysis to ensure steady improvement.",
+      gradient: "from-purple-500/20 to-pink-500/20"
+    },
+    {
+      number: "03",
+      title: "Daily Practice Problems & Assignments", 
+      description: "Structured Daily Practice Problems, assignments, and concept reviews designed to challenge students and strengthen long-term retention skills.",
+      gradient: "from-pink-500/20 to-blue-500/20"
+    },
+    {
+      number: "04",
+      title: "Exam-Oriented Preparation Strategy",
+      description: "Meticulously aligned curriculum with the latest NEET, JEE, UPSC, and APSC exam patterns, updated syllabus, and proven testing strategies.",
+      gradient: "from-cyan-500/20 to-blue-500/20"
+    }
+  ]
+
+  return (
+    <section className="relative py-20 lg:py-16 bg-gray-50 overflow-hidden">
+      {/* Small box type background design */}
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-16 left-8 w-8 h-8 border border-gray-300 rounded"></div>
+        <div className="absolute top-40 right-12 w-6 h-6 border border-gray-400 rounded-sm"></div>
+        <div className="absolute bottom-32 left-16 w-10 h-10 border border-gray-300 rounded-md"></div>
+        <div className="absolute top-1/3 right-8 w-12 h-12 border border-gray-300 rounded-lg"></div>
+        <div className="absolute bottom-16 right-1/4 w-7 h-7 border border-gray-400 rounded"></div>
+        <div className="absolute top-24 left-1/3 w-9 h-9 border border-gray-300 rounded-sm"></div>
+        <div className="absolute bottom-40 left-1/2 w-8 h-8 border border-gray-300 rounded-md"></div>
+        <div className="absolute top-1/2 left-12 w-11 h-11 border border-gray-300 rounded-lg"></div>
+        <div className="absolute bottom-24 right-16 w-6 h-6 border border-gray-400 rounded"></div>
+        <div className="absolute top-3/4 right-1/3 w-10 h-10 border border-gray-300 rounded-sm"></div>
+      </div>
+
+      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header Section */}
+        <div className="text-center mb-20">
+          <Badge className="mb-8 bg-gray-100 text-gray-700 border-gray-200 px-6 py-2 text-sm font-medium">
+            ✨ Our Teaching Methodology
+          </Badge>
+          
+          <h2 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-gray-900 mb-8 leading-tight">
+            Our Teaching{' '}
+            <AnimatedShinyText className="text-4xl sm:text-5xl lg:text-7xl font-bold">
+              Methodology
+            </AnimatedShinyText>
+          </h2>
+          
+          <p className="text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            At Ajmal Educare, we believe effective teaching transcends traditional classroom instruction. 
+            Our methodology provides clarity, consistency, and confidence to every student, ensuring 
+            comprehensive preparation for competitive exams and future challenges.
+          </p>
+        </div>
+
+        {/* Cards Grid */}
+        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          {methodologies.map((method, index) => (
+            <MagicCard
+              key={index}
+              className="group h-full rounded-2xl p-0"
+              gradientColor="rgba(255, 255, 255, 0.1)"
+              gradientFrom="#3B82F6"
+              gradientTo="#8B5CF6"
+              gradientSize={300}
+            >
+              <div className="h-full p-8 lg:p-10 flex flex-col">
+                {/* Number badge */}
+                <div className="mb-6">
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-gray-100 to-gray-50 border border-gray-200 group-hover:scale-110 transition-transform duration-300 shadow-sm">
+                    <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                      {method.number}
+                    </span>
+                  </div>
+                </div>
+                
+                {/* Title */}
+                <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-6 leading-tight">
+                  {method.title}
+                </h3>
+                
+                {/* Description */}
+                <p className="text-gray-600 leading-relaxed text-lg flex-grow">
+                  {method.description}
+                </p>
+              </div>
+            </MagicCard>
+          ))}
+        </div>
+
+        {/* Bottom decorative section */}
+        <div className="mt-20 text-center">
+          <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gray-100/80 backdrop-blur-sm border border-gray-200">
+            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
+            <span className="text-sm text-gray-700 font-medium">Proven methodology with 95% success rate</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default MethodologySection
