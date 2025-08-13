@@ -19,7 +19,7 @@ const academies = [
     label: "Ajmal IAS Academy", 
     icon: Users, 
     color: "#6D28D9", // Using brand-accent color from your theme
-    href: "#ias" 
+    href: "/ias" 
   },
 ]
 

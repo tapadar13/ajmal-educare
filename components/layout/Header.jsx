@@ -31,7 +31,7 @@ const Header = () => {
       hasDropdown: true,
       dropdownItems: [
         { name: 'Ajmal Super 40', href: '/super40' },
-        { name: 'Ajmal IAS Academy', href: '#ias' }
+        { name: 'Ajmal IAS Academy', href: '/ias' }
       ]
      },
   ]
