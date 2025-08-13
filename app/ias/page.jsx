@@ -56,13 +56,13 @@ export default function IASAcademyPage() {
               <div className="relative rounded-2xl">
                 <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
                 <Card className="relative z-0 rounded-[inherit] h-full shadow-none">
-                  <CardHeader className="flex items-center gap-3">
+                  <CardHeader className="flex items-center gap-3 pt-6">
                     <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">
                       {GradientIcon({ Icon: BookOpen, id: 'ias-lib' })}
                     </div>
                     <CardTitle className="text-gray-900">24×7 Library Access</CardTitle>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="pb-6">
                     <CardDescription className="text-gray-600">
                       Our fully-equipped library remains open round-the-clock and offers high-speed Wi-Fi, enabling students to access digital resources. A quiet, focused zone for self-study anytime.
                     </CardDescription>
@@ -73,13 +73,13 @@ export default function IASAcademyPage() {
               <div className="relative rounded-2xl">
                 <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
                 <Card className="relative z-0 rounded-[inherit] h-full shadow-none">
-                  <CardHeader className="flex items-center gap-3">
+                  <CardHeader className="flex items-center gap-3 pt-6">
                     <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">
                       {GradientIcon({ Icon: Monitor, id: 'ias-smart' })}
                     </div>
                     <CardTitle className="text-gray-900">Digital Smart Classrooms</CardTitle>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="pb-6">
                     <CardDescription className="text-gray-600">
                       Our modern classrooms are equipped with smart boards and audio-visual tools to enhance interactive learning, live sessions, and recorded lectures for better conceptual clarity.
                     </CardDescription>
@@ -90,13 +90,13 @@ export default function IASAcademyPage() {
               <div className="relative rounded-2xl">
                 <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
                 <Card className="relative z-0 rounded-[inherit] h-full shadow-none">
-                  <CardHeader className="flex items-center gap-3">
+                  <CardHeader className="flex items-center gap-3 pt-6">
                     <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">
                       {GradientIcon({ Icon: Home, id: 'ias-hostel' })}
                     </div>
                     <CardTitle className="text-gray-900">Hostel Facility</CardTitle>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="pb-6">
                     <CardDescription className="text-gray-600">
                       Safe, comfortable, and disciplined hostel accommodations are available for both boys and girls. Designed to provide a study-conducive atmosphere with in-house warden support.
                     </CardDescription>
@@ -107,13 +107,13 @@ export default function IASAcademyPage() {
               <div className="relative rounded-2xl">
                 <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
                 <Card className="relative z-0 rounded-[inherit] h-full shadow-none">
-                  <CardHeader className="flex items-center gap-3">
+                  <CardHeader className="flex items-center gap-3 pt-6">
                     <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">
                       {GradientIcon({ Icon: Wifi, id: 'ias-online' })}
                     </div>
                     <CardTitle className="text-gray-900">Online Courses</CardTitle>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="pb-6">
                     <CardDescription className="text-gray-600">
                       Learn from anywhere with our structured online programs for UPSC & APSC. Live classes, recorded lectures, digital notes, and doubt-clearing sessions. Perfect for remote learners and working aspirants.
                     </CardDescription>
