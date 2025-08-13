@@ -2,7 +2,8 @@
 
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { MapPin, Phone, Mail, Clock, Building2, ArrowRight, Users, Award, ExternalLink } from 'lucide-react'
+import { MapPin, Phone, Mail, Clock, Building2, ArrowRight, Users, Award } from 'lucide-react'
+import { ShineBorder } from '@/components/magicui/shine-border'
 
 const ContactSection = () => {
   const contactInfo = [
@@ -54,37 +55,37 @@ const ContactSection = () => {
     {
       name: "Ajmal Super 40",
       description: "Excellence in JEE & NEET Preparation",
-      color: "from-green-500 to-emerald-600",
-      bgColor: "bg-gradient-to-br from-green-50 to-emerald-50",
+      color: "from-violet-600 to-indigo-600",
+      bgColor: "bg-gradient-to-br from-indigo-50 to-violet-50",
       icon: Award,
       locations: [
         {
           city: "Hojai Office",
-          address: "Ajmal Super 40, Borolobi Colony, Hojai",
-          contact: "Mr. Nazir Hossain",
-          phone: "9435786477",
-          additional: ["Abdullah Zamman: 8127514763", "Samuel Alom: 9876204477"]
+          address: "Ajmal Super 40, Bordoloi Colony, Hojai",
+          contact: "Mr. Nurul Hoque",
+          phone: "9957979477",
+          additional: ["Abdulla Zaman: 9127114763", "Samsul Alam: 9678204477"]
         },
         {
           city: "Dhubri Office", 
           address: "Ajmal Super 40, Infront of B.N College, Dhubri",
-          contact: "Nasirour Rahman",
-          phone: "8864696069",
-          additional: ["Mustak: 9706117162"]
+          contact: "Nurajbul Rahman",
+          phone: "9864998009",
+          additional: ["Mustak: 9706117122"]
         },
         {
           city: "Badarpur Office",
           address: "Ajmal Super 40, Near SBI Building, Badarpur",
-          contact: "Shahidul Uddin",
-          phone: "8638798649",
-          additional: ["Furkan Ahmed: 8001492671"]
+          contact: "Shahab Uddin",
+          phone: "8099758540",
+          additional: ["Furkan Ahmed: 6001429571"]
         },
         {
-          city: "Baipeta Office",
-          address: "Ajmal Super 40, Near College Tiniali, Kaligacha",
-          contact: "Mostajir Jamal",
+          city: "Barpeta Office",
+          address: "Ajmal Super 40, Near College Tiniali, Kalgachia",
+          contact: "Mehtab Jamal",
           phone: "8473016881",
-          additional: ["Sohel Rana: 7002736532"]
+          additional: ["Sohal Rana: 7002708530"]
         }
       ]
     },
@@ -96,9 +97,9 @@ const ContactSection = () => {
       icon: Users,
       locations: [
         {
-          city: "Main Campus",
-          address: "Fire Brigade Road, Bishnugarh, Hojai, Assam",
-          contact: "Ahmed Nawej",
+          city: "Address",
+          address: "Fire Brigade Road, Bishnupally, Hojai, Assam",
+          contact: "Ahmed Nawaj",
           phones: ["9287502601", "9287502602", "9287502603"]
         }
       ]
@@ -106,7 +107,7 @@ const ContactSection = () => {
   ]
 
   return (
-    <section className="relative min-h-screen bg-gray-50 overflow-hidden py-20">
+    <section className="relative min-h-screen bg-gray-50 overflow-hidden py-12">
       {/* Enhanced Background Design */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-blue-50/20 to-purple-50/20" />
@@ -127,45 +128,37 @@ const ContactSection = () => {
       </div>
 
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Enhanced Header Section */}
-        <div className="text-center mb-20">
-          <Badge 
-            variant="outline"
-            className="mb-8 text-base font-medium py-3 px-6 border-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 text-blue-700 rounded-full backdrop-blur-sm"
-          >
-            ✨ Connect With Excellence
-          </Badge>
-          
-          <h1 className="text-6xl sm:text-7xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight tracking-tighter">
-            Contact Us
-          </h1>
-          
-          <p className="text-xl sm:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light">
-            Connect with our dedicated academies for admissions, queries, or partnership opportunities
-          </p>
+        {/* Header Section (compact) */}
+        <div className="text-center mb-8">
+          <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight tracking-tighter">Contact Us</h1>
         </div>
 
         {/* Enhanced Academy Locations */}
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-12 items-stretch">
             {academyLocations.map((academy, index) => (
-              <Card key={index} className={`border-0 ${academy.bgColor} overflow-hidden rounded-lg`}>
+              <div key={index} className={`relative rounded-lg h-full`}>
+                <Card className={`border-0 ${academy.bgColor} overflow-hidden rounded-lg relative z-10 h-full flex flex-col p-0`}>
+                <ShineBorder
+                  borderWidth={2}
+                  duration={12}
+                  shineColor={["#4F46E5", "#6D28D9"]}
+                />
                 {/* Academy Header */}
                 <div className={`bg-gradient-to-r ${academy.color} p-8 text-white relative overflow-hidden`}>
                   <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
                   <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full translate-y-12 -translate-x-12"></div>
                   <div className="relative">
-                    <div className="flex items-center justify-between mb-4">
+                    <div className="flex items-center gap-3 mb-2">
                       <academy.icon className="w-10 h-10 text-white/90" />
-                      <ExternalLink className="w-6 h-6 text-white/70 group-hover:text-white transition-colors" />
+                      <h3 className="text-3xl font-bold">{academy.name}</h3>
                     </div>
-                    <h3 className="text-3xl font-bold mb-2">{academy.name}</h3>
                     <p className="text-white/90 text-lg font-medium">{academy.description}</p>
                   </div>
                 </div>
 
                 {/* Locations List */}
-                <CardContent className="p-8">
+                <CardContent className="p-8 flex-1">
                   <div className="space-y-8">
                     {academy.locations.map((location, idx) => (
                       <div key={idx} className="group/location">
@@ -221,45 +214,34 @@ const ContactSection = () => {
                     ))}
                   </div>
                 </CardContent>
-              </Card>
+                </Card>
+              </div>
             ))}
           </div>
         </div>
 
         {/* Enhanced Quick Contact CTA */}
         <div className="text-center mt-24">
-          <Card className="max-w-5xl mx-auto border-0 bg-gradient-to-r from-gray-900 to-gray-800 text-white overflow-hidden relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
-            <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-white/5 to-transparent rounded-full -translate-y-32 translate-x-32"></div>
-            <div className="absolute bottom-0 left-0 w-48 h-48 bg-gradient-to-br from-white/5 to-transparent rounded-full translate-y-24 -translate-x-24"></div>
-            
+          <Card className="max-w-5xl mx-auto border-0 bg-gradient-to-r from-indigo-50 to-violet-50 text-gray-900 overflow-hidden relative">
+            <ShineBorder borderWidth={2} duration={14} shineColor={["#4F46E5", "#6D28D9"]} />
             <CardContent className="relative p-12">
-              <div className="max-w-3xl mx-auto">
-                <h3 className="text-4xl font-bold mb-6">
-                  Need Immediate Assistance?
-                </h3>
-                <p className="text-xl text-gray-300 mb-10 font-light">
-                  Our admission counselors are ready to help you choose the perfect program for your future
-                </p>
-                <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                  <a
-                    href="tel:+919876543210"
-                    className="group inline-flex items-center justify-center py-4 px-8 bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-2xl font-semibold hover:from-green-600 hover:to-emerald-600 transition-all duration-300 transform hover:scale-105"
-                  >
-                    <Phone className="w-6 h-6 mr-3 group-hover:animate-pulse" />
-                    Call Now
-                    <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-                  </a>
-                  <a
-                    href="mailto:info@ajmaleducare.com"
-                    className="group inline-flex items-center justify-center py-4 px-8 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-2xl font-semibold hover:from-blue-600 hover:to-indigo-600 transition-all duration-300 transform hover:scale-105"
-                  >
-                    <Mail className="w-6 h-6 mr-3 group-hover:animate-pulse" />
-                    Send Email
-                    <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-                  </a>
+              <div className="max-w-4xl mx-auto grid gap-8 sm:grid-cols-2 text-left">
+                <div>
+                  <h3 className="text-2xl font-bold mb-4 flex items-center"><Mail className="w-6 h-6 mr-2"/>Email Us</h3>
+                  <div className="text-lg text-gray-700 space-y-1">
+                    <p>info@ajmaleducare.com</p>
+                    <p>admissions@ajmaleducare.com</p>
+                  </div>
                 </div>
+                <div>
+                  <h3 className="text-2xl font-bold mb-4 flex items-center"><Phone className="w-6 h-6 mr-2"/>Call Us</h3>
+                  <div className="text-lg text-gray-700 space-y-1">
+                    <p className="font-medium">Primary: <span className="text-indigo-700 font-semibold">+91 98765 43210</span></p>
+                    <p className="font-medium pt-2">Secondary: <span className="text-indigo-700 font-semibold">+91 87654 32109</span></p>
+                    
+                  </div>
                 </div>
+              </div>
             </CardContent>
           </Card>
         </div>
