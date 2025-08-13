@@ -118,7 +118,7 @@ export default function AnimatedDropdown({ onItemClick }) {
         >
           <span>Our Academies</span>
           <motion.div
-            animate={{ rotate: isOpen ? 120 : 0 }}
+            animate={{ rotate: isOpen ? 180 : 0 }}
             transition={{ duration: 0.2 }}
             className="flex items-center justify-center"
           >
