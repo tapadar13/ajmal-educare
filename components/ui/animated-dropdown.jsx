@@ -72,6 +72,8 @@ export default function AnimatedDropdown({ onItemClick }) {
   const [selectedAcademy, setSelectedAcademy] = React.useState(null)
   const [hoveredAcademy, setHoveredAcademy] = React.useState(null)
   const dropdownRef = React.useRef(null)
+  const itemRefs = React.useRef([])
+  const [itemHeight, setItemHeight] = React.useState(0)
 
   // Handle click outside to close dropdown
   useClickAway(dropdownRef, () => setIsOpen(false))
@@ -90,6 +92,16 @@ export default function AnimatedDropdown({ onItemClick }) {
       onItemClick(academy)
     }
   }
+
+  // Measure item height when dropdown opens to correctly position hover highlight
+  React.useEffect(() => {
+    if (isOpen && itemRefs.current[0]) {
+      const measuredHeight = Math.round(
+        itemRefs.current[0].getBoundingClientRect().height
+      )
+      setItemHeight(measuredHeight || 36)
+    }
+  }, [isOpen])
 
   return (
     <MotionConfig reducedMotion="user">
@@ -165,8 +177,13 @@ export default function AnimatedDropdown({ onItemClick }) {
                     layoutId="hover-highlight"
                     className="absolute inset-x-1 bg-gray-50 rounded-lg"
                     animate={{
-                      y: academies.findIndex((a) => (hoveredAcademy || selectedAcademy?.id) === a.id) * 48 + 8,
-                      height: 40,
+                      y: (() => {
+                        const index = academies.findIndex(
+                          (a) => (hoveredAcademy || selectedAcademy?.id) === a.id
+                        )
+                        return index >= 0 ? index * (itemHeight || 36) : 0
+                      })(),
+                      height: itemHeight || 36,
                       opacity: hoveredAcademy || selectedAcademy ? 1 : 0,
                     }}
                     transition={{
@@ -175,15 +192,16 @@ export default function AnimatedDropdown({ onItemClick }) {
                       duration: 0.5,
                     }}
                   />
-                  {academies.map((academy) => (
+                  {academies.map((academy, index) => (
                     <motion.button
                       key={academy.id}
+                      ref={(el) => (itemRefs.current[index] = el)}
                       onClick={() => handleAcademyClick(academy)}
                       onHoverStart={() => setHoveredAcademy(academy.id)}
                       onHoverEnd={() => setHoveredAcademy(null)}
                       className={cn(
                         "relative flex w-full items-center px-3 py-2 text-sm rounded-lg",
-                        "transition-colors duration-60",
+                        "transition-colors duration-200",
                         "focus:outline-none focus:ring-primary/20",
                         selectedAcademy?.id === academy.id || hoveredAcademy === academy.id
                           ? "text-gray-900"
