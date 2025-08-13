@@ -2,6 +2,7 @@ import { Badge } from '@/components/ui/badge'
 import { Card, CardContent } from '@/components/ui/card'
 import { Eye, Target, Users, BookOpen, Heart, Lightbulb, ArrowRight, Sparkles, Zap, Star, Trophy, Rocket, Globe } from 'lucide-react'
 import AchievementsCounter from './AchievementsCounter'
+import { ShineBorder } from '@/components/magicui/shine-border'
 
 const MissionVisionSection = () => {
   return (
@@ -47,9 +48,10 @@ const MissionVisionSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-fr">
             
             {/* Vision Header Card - Spans 2 columns */}
-            <div className="md:col-span-2 group cursor-pointer">
-              <div className="relative h-full bg-white/80 backdrop-blur-2xl rounded-3xl p-8 border border-white/30 shadow-2xl hover:shadow-3xl
-               overflow-hidden">
+            <div className="md:col-span-2 group cursor-pointer h-full">
+              <div className="relative rounded-3xl h-full">
+                <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
+                <div className="relative z-0 h-full bg-white/80 backdrop-blur-2xl rounded-[inherit] p-8 border border-white/30 shadow-2xl hover:shadow-3xl overflow-hidden min-h-[300px]">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-purple-500/5 to-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
                 <div className="absolute -top-20 -right-20 w-40 h-40 bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-full blur-2xl group-hover:scale-125 transition-transform duration-1000"></div>
                 
@@ -68,12 +70,15 @@ const MissionVisionSection = () => {
                   To become a nationally recognized center of excellence in coaching and academic support, empowering students from every background especially the underserved and marginalized with the knowledge, confidence, and values to lead and serve.
                   </p>
                 </div>
+                </div>
               </div>
             </div>
 
             {/* Mission Header Card - Spans 2 columns */}
-            <div className="md:col-span-2 group cursor-pointer">
-              <div className="relative h-full bg-white/80 backdrop-blur-2xl rounded-3xl p-8 border border-white/30 shadow-2xl hover:shadow-3xl overflow-hidden">
+            <div className="md:col-span-2 group cursor-pointer h-full">
+              <div className="relative rounded-3xl h-full">
+                <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
+                <div className="relative z-0 h-full bg-white/80 backdrop-blur-2xl rounded-[inherit] p-8 border border-white/30 shadow-2xl hover:shadow-3xl overflow-hidden min-h-[300px]">
                 <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 via-cyan-500/5 to-teal-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
                 <div className="absolute -top-20 -right-20 w-40 h-40 bg-gradient-to-br from-emerald-400/20 to-cyan-400/20 rounded-full blur-2xl group-hover:scale-125 transition-transform duration-1000"></div>
                 
@@ -84,13 +89,14 @@ const MissionVisionSection = () => {
                     </div>
                     <div className="ml-4">
                       <h3 className="text-4xl font-black text-gray-900">Our Mission</h3>
-                      <div className="w-20 h-1 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-full mt-2"></div>
+                      <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mt-2"></div>
                     </div>
                   </div>
                   
                   <p className="text-xl text-gray-700 leading-relaxed flex-1">
                   To identify and nurture meritorious students from underprivileged communities and equip them with the tools to succeed in competitive exams like NEET, JEE, UPSC, and APSC.
                   </p>
+                </div>
                 </div>
               </div>
             </div>
