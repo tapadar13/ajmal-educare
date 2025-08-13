@@ -357,7 +357,7 @@ const NewsSection = () => {
                 🎬 A glimpse into our institute
               </Badge>
               
-              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                 LIST OF{' '}
                 <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                   NEWS & MEDIA
@@ -392,11 +392,7 @@ const NewsSection = () => {
                               </div>
                             </div>
                           </div>
-                          <div className="p-4">
-                            <h4 className="font-semibold text-gray-900 text-center line-clamp-2 min-h-[3rem] flex items-center justify-center">
-                              {item.title}
-                            </h4>
-                          </div>
+                          {null}
                         </CardContent>
                       </Card>
                     </a>
