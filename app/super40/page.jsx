@@ -206,7 +206,7 @@ export default function Super40Page() {
               <div className="relative rounded-2xl">
                 <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
                 <Card className="relative z-0 rounded-[inherit] h-full shadow-none">
-                  <CardHeader>
+                  <CardHeader className="py-6">
                     <CardTitle className="text-gray-900">Test Series</CardTitle>
                     <CardDescription className="text-gray-600">Test series</CardDescription>
                   </CardHeader>
@@ -215,7 +215,7 @@ export default function Super40Page() {
               <div className="relative rounded-2xl">
                 <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
                 <Card className="relative z-0 rounded-[inherit] h-full shadow-none">
-                  <CardHeader>
+                  <CardHeader className="py-6">
                     <CardTitle className="text-gray-900">One Year Integrated Course</CardTitle>
                     <CardDescription className="text-gray-600">For students who have passed class XII</CardDescription>
                   </CardHeader>
