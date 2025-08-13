@@ -186,11 +186,11 @@ export default function IASAcademyPage() {
               <div className="relative rounded-2xl">
                 <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
                 <Card className="relative z-0 rounded-[inherit] h-full shadow-none">
-                  <CardHeader>
+                  <CardHeader className="py-6">
                     <CardTitle className="text-gray-900">Assam Exclusive Batch (GS V)</CardTitle>
                     <CardDescription className="text-gray-600">APSC</CardDescription>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="pb-6">
                     <CardDescription className="text-gray-600">
                       Prepare with precision for APSC Mains GS Paper V with our Assam Exclusive Batch, focused on Assam-specific topics and state-related knowledge. This course is specially designed for GS Paper V of the APSC Mains exam and covers Assam’s history, geography, polity, economy, society, and current affairs. Get in-depth guidance from subject experts, practice answer writing, and improve your score with targeted preparation.
                     </CardDescription>
@@ -201,11 +201,11 @@ export default function IASAcademyPage() {
               <div className="relative rounded-2xl">
                 <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
                 <Card className="relative z-0 rounded-[inherit] h-full shadow-none">
-                  <CardHeader>
+                  <CardHeader className="py-6">
                     <CardTitle className="text-gray-900">IAS Advance Batch – GS (Mains)</CardTitle>
                     <CardDescription className="text-gray-600">UPSC / IAS</CardDescription>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="pb-6">
                     <CardDescription className="text-gray-600">
                       Join the IAS Advance Batch for GS (Mains) and get comprehensive, expert-guided preparation tailored for UPSC Civil Services Mains Examination. Designed by experienced UPSC mentors, this batch offers in-depth General Studies syllabus coverage, answer writing practice, personalized feedback, and advanced test series to help you secure top ranks in the IAS exam.
                     </CardDescription>
@@ -216,11 +216,11 @@ export default function IASAcademyPage() {
               <div className="relative rounded-2xl">
                 <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
                 <Card className="relative z-0 rounded-[inherit] h-full shadow-none">
-                  <CardHeader>
+                  <CardHeader className="py-6">
                     <CardTitle className="text-gray-900">IAS Foundation Batch – GS (Prelims + Mains)</CardTitle>
                     <CardDescription className="text-gray-600">UPSC / IAS</CardDescription>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="pb-6">
                     <CardDescription className="text-gray-600">
                       Enroll in our IAS Foundation Batch for General Studies (Prelims + Mains) and build a strong base for your UPSC Civil Services Exam preparation. This integrated course offers a comprehensive approach covering the full UPSC GS syllabus, including Prelims and Mains, along with NCERT fundamentals, current affairs, answer writing, mentorship, and regular tests—all guided by expert faculty.
                     </CardDescription>
@@ -231,11 +231,11 @@ export default function IASAcademyPage() {
               <div className="relative rounded-2xl">
                 <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
                 <Card className="relative z-0 rounded-[inherit] h-full shadow-none">
-                  <CardHeader>
+                  <CardHeader className="py-6">
                     <CardTitle className="text-gray-900">IAS GS Mentorship Programme</CardTitle>
                     <CardDescription className="text-gray-600">UPSC / IAS</CardDescription>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="pb-6">
                     <CardDescription className="text-gray-600">
                       Join our IAS GS Mentorship Programme and receive one-on-one guidance tailored to your UPSC preparation needs. This program is designed to provide personalized mentorship for General Studies (Prelims + Mains), including study planning, daily/weekly target setting, performance tracking, answer writing feedback, and doubt resolution—directly from experienced UPSC mentors.
                     </CardDescription>
@@ -246,11 +246,11 @@ export default function IASAcademyPage() {
               <div className="relative rounded-2xl">
                 <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
                 <Card className="relative z-0 rounded-[inherit] h-full shadow-none">
-                  <CardHeader>
+                  <CardHeader className="py-6">
                     <CardTitle className="text-gray-900">APSC Mains Crash Course</CardTitle>
                     <CardDescription className="text-gray-600">APSC</CardDescription>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="pb-6">
                     <CardDescription className="text-gray-600">
                       Boost your APSC Mains preparation with our expertly designed Crash Course, focused on high-scoring strategies and complete syllabus coverage. This short-term program includes structured classes, answer writing practice, model tests, and mentorship—designed specifically for the APSC Mains exam pattern. Ideal for last-phase revision with expert guidance and targeted learning.
                     </CardDescription>
@@ -261,11 +261,11 @@ export default function IASAcademyPage() {
               <div className="relative rounded-2xl">
                 <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
                 <Card className="relative z-0 rounded-[inherit] h-full shadow-none">
-                  <CardHeader>
+                  <CardHeader className="py-6">
                     <CardTitle className="text-gray-900">APSC Foundation Batch – GS</CardTitle>
                     <CardDescription className="text-gray-600">APSC</CardDescription>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="pb-6">
                     <CardDescription className="text-gray-600">
                       Join our APSC Foundation Batch for General Studies and build a strong base for Prelims and Mains with expert guidance. This comprehensive course is designed to cover the full APSC GS syllabus with conceptual clarity, daily classes, updated current affairs, test series, and personalized mentorship—ideal for beginners and serious aspirants aiming to crack the APSC exam.
                     </CardDescription>
