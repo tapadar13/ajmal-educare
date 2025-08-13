@@ -65,7 +65,7 @@ const WhyChooseSection = () => {
       icon: Users,
       title: "Expert Faculty",
       description: "Learn from industry veterans and subject matter experts with proven teaching methodologies and years of experience delivering exceptional educational outcomes for students",
-      stats: "50+ Expert Teachers",
+      stats: "150+ Expert Teachers",
       color: "brand-secondary",
       endAngle: 60
     },
@@ -73,7 +73,7 @@ const WhyChooseSection = () => {
       icon: Target,
       title: "Personalized Learning", 
       description: "Customized study plans tailored to individual learning styles with focused attention to address each student's unique needs ensuring optimal academic growth and understanding",
-      stats: "1:15 Teacher-Student Ratio",
+      stats: "One-on-One Mentoring",
       color: "brand-secondary",
       endAngle: 120
     },
@@ -81,7 +81,7 @@ const WhyChooseSection = () => {
       icon: BookOpen,
       title: "Comprehensive Material",
       description: "Meticulously crafted study materials covering the entire syllabus with extensive practice questions and detailed explanations designed to strengthen conceptual clarity and exam readiness",
-      stats: "10,000+ Practice Questions",
+      stats: "Extensive Practice Questions",
       color: "brand-accent",
       endAngle: 180
     },
@@ -89,7 +89,7 @@ const WhyChooseSection = () => {
       icon: TrendingUp,
       title: "Proven Results",
       description: "Track record of consistent success with students securing top ranks in competitive examinations year after year demonstrating our commitment to academic excellence",
-      stats: "95% Success Rate",
+      stats: "High Success Rate",
       color: "brand-secondary",
       endAngle: 240
     },
@@ -97,7 +97,7 @@ const WhyChooseSection = () => {
       icon: Clock,
       title: "Strong Track Record",
       description: "1400+ selections in NEET & JEE examinations alongside numerous civil services aspirants qualifying for APSC reflecting our comprehensive approach to competitive exam preparation",
-      stats: "6 Different Batches",
+      stats: "1400+ Selections",
       color: "brand-secondary",
       endAngle: 300
     },
@@ -177,7 +177,7 @@ const WhyChooseSection = () => {
         <div className="lg:hidden h-screen overflow-x-hidden sticky top-0 w-full px-6 pt-20">
         <div className="flex flex-col gap-10">
           <AnimatedText
-            text="Why Choose Ajmal Educare"
+            text="Why Choose Us"
             className="text-4xl font-bold text-gray-900"
           />
           <div className="relative flex">
@@ -200,7 +200,7 @@ const WhyChooseSection = () => {
         <div className="hidden lg:block h-screen sticky top-0 w-full px-10 pt-20">
           <div className="flex flex-col gap-10">
             <AnimatedText
-              text="Why Choose Ajmal Educare"
+              text="Why Choose Us"
               className="text-6xl font-bold text-gray-900"
             />
             <ProcessList currentSection={currentSection} className="w-1/2" features={features} />

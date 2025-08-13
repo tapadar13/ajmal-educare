@@ -28,16 +28,12 @@ const MissionVisionSection = () => {
           
           <h2 className="text-5xl sm:text-6xl lg:text-6xl font-black text-gray-900 mb-8 leading-none tracking-tight">
             Our{' '}
-            <span className="relative inline-block">
-              <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-emerald-600 bg-clip-text text-transparent">
-                Vision
-              </span>
+            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              Vision
             </span>
             {' '}&{' '}
-            <span className="relative inline-block">
-              <span className="bg-gradient-to-r from-emerald-600 via-cyan-600 to-blue-600 bg-clip-text text-transparent">
-                Mission
-              </span>
+            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              Mission
             </span>
           </h2>
           
@@ -59,7 +55,7 @@ const MissionVisionSection = () => {
                 
                 <div className="relative z-10 h-full flex flex-col">
                   <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
+                    <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
                       <Eye className="w-4 h-4 text-white" />
                     </div>
                     <div className="ml-4">
@@ -83,7 +79,7 @@ const MissionVisionSection = () => {
                 
                 <div className="relative z-10 h-full flex flex-col">
                   <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-cyan-600 rounded-2xl flex items-center justify-center shadow-lg">
+                    <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
                       <Target className="w-4 h-4 text-white" />
                     </div>
                     <div className="ml-4">

@@ -24,9 +24,9 @@ const AboutSection = () => {
           
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
             Our Foundation{' '}
-            <AnimatedShinyText className="text-4xl sm:text-5xl lg:text-6xl font-bold">
+            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Story
-            </AnimatedShinyText>
+            </span>
           </h2>
         </div>
 

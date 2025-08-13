@@ -1,7 +1,8 @@
 import { Badge } from '@/components/ui/badge'
 import { Card, CardHeader, CardTitle, CardContent, CardFooter } from '@/components/ui/card'
-import { ArrowRight, BookOpen, Trophy, Users, Target, Clock, Award, GraduationCap, UserCheck, FileText, MessageCircle, Brain, Zap, Star, Globe } from 'lucide-react'
+import { ArrowRight, BookOpen, Trophy, Users, Target, Clock, Award, GraduationCap, UserCheck, FileText, MessageCircle, Brain, Zap, Star, Globe, School } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const HeroSection = () => {
   return (
@@ -24,7 +25,7 @@ const HeroSection = () => {
           
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight tracking-tighter">
             Specialized{' '}
-            <span className="text-gray-700">
+            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Academies
             </span>
           </h1>
@@ -42,8 +43,8 @@ const HeroSection = () => {
             <CardHeader className="p-0">
               {/* Academy Badge */}
               <div className="px-6 pt-6 pb-1">
-                <Badge className="bg-green-600 text-white px-4 py-2 text-3xl font-semibold rounded-lg border-0 hover:bg-green-600">
-                  🎯 Ajmal Super 40
+                <Badge className="bg-[#D5F2FE] text-blue-500 px-4 py-2 text-3xl font-semibold rounded-lg border-0 flex items-center gap-2">
+                  <Target className="w-6 h-6" /> Ajmal Super 40
                 </Badge>
               </div>
               
@@ -75,38 +76,38 @@ const HeroSection = () => {
               <div className="space-y-3">
                 <h4 className="font-bold text-gray-900 mb-4">Key Features</h4>
                 <div className="flex items-center text-gray-700">
-                  <div className="w-8 h-8 bg-green-50 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
-                    <BookOpen className="w-4 h-4 text-green-600" />
+                  <div className="w-8 h-8 bg-[#D5F2FE] rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                    <BookOpen className="w-4 h-4 text-blue-600" />
                   </div>
                   <span className="text-sm">Intensive coaching for NEET & JEE</span>
                 </div>
                 <div className="flex items-center text-gray-700">
-                  <div className="w-8 h-8 bg-green-50 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
-                    <FileText className="w-4 h-4 text-green-600" />
+                  <div className="w-8 h-8 bg-[#D5F2FE] rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                    <FileText className="w-4 h-4 text-blue-600" />
                   </div>
                   <span className="text-sm">Regular mock tests & detailed analysis</span>
                 </div>
                 <div className="flex items-center text-gray-700">
-                  <div className="w-8 h-8 bg-green-50 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
-                    <UserCheck className="w-4 h-4 text-green-600" />
+                  <div className="w-8 h-8 bg-[#D5F2FE] rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                    <UserCheck className="w-4 h-4 text-blue-600" />
                   </div>
                   <span className="text-sm">Individual mentorship program</span>
                 </div>
                 <div className="flex items-center text-gray-700">
-                  <div className="w-8 h-8 bg-green-50 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
-                    <Clock className="w-4 h-4 text-green-600" />
+                  <div className="w-8 h-8 bg-[#D5F2FE] rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                    <Clock className="w-4 h-4 text-blue-600" />
                   </div>
                   <span className="text-sm">24/7 doubt clearing sessions</span>
                 </div>
                 <div className="flex items-center text-gray-700">
-                  <div className="w-8 h-8 bg-green-50 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
-                    <Award className="w-4 h-4 text-green-600" />
+                  <div className="w-8 h-8 bg-[#D5F2FE] rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                    <Award className="w-4 h-4 text-blue-600" />
                   </div>
                   <span className="text-sm">Scholarship opportunities for deserving students</span>
                 </div>
                 <div className="flex items-center text-gray-700">
-                  <div className="w-8 h-8 bg-green-50 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
-                    <GraduationCap className="w-4 h-4 text-green-600" />
+                  <div className="w-8 h-8 bg-[#D5F2FE] rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                    <GraduationCap className="w-4 h-4 text-blue-600" />
                   </div>
                   <span className="text-sm">Integrated coaching which includes board curriculum and NEET & JEE</span>
                 </div>
@@ -114,13 +115,13 @@ const HeroSection = () => {
             </CardContent>
             
             <CardFooter>
-              <a
+              <Link
                 href="#super40"
-                className="w-full inline-flex items-center justify-center py-3 px-6 bg-green-500 text-white rounded-xl font-semibold hover:bg-green-600 transition-colors duration-300"
+                className="group relative isolate inline-flex items-center justify-center overflow-hidden text-left font-medium transition duration-300 ease-[cubic-bezier(0.4,0.36,0,1)] before:duration-300 before:ease-[cubic-bezier(0.4,0.36,0,1)] before:transtion-opacity rounded-md shadow-[0_1px_theme(colors.white/0.07)_inset,0_1px_3px_theme(colors.gray.900/0.2)] before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:rounded-md before:bg-gradient-to-b before:from-white/20 before:opacity-50 hover:before:opacity-100 after:pointer-events-none after:absolute after:inset-0 after:-z-10 after:rounded-md after:bg-gradient-to-b after:from-white/10 after:from-[46%] after:to-[54%] after:mix-blend-overlay text-sm h-[1.875rem] px-3 ring-1 bg-blue-500 text-white ring-blue-500 w-full py-3"
               >
                 Learn More About Ajmal Super 40
                 <ArrowRight className="w-4 h-4 ml-2" />
-              </a>
+              </Link>
             </CardFooter>
           </Card>
 
@@ -129,8 +130,8 @@ const HeroSection = () => {
             <CardHeader className="p-0">
               {/* Academy Badge */}
               <div className="px-6 pt-6 pb-1">
-                <Badge className="bg-red-500 text-white px-4 py-2 text-3xl font-semibold rounded-lg border-0 hover:bg-red-600">
-                  <Award className="w-16 h-16" /> Ajmal IAS Academy
+                <Badge className="bg-[#FFF0E1] text-orange-500 px-4 py-2 text-3xl font-semibold rounded-lg border-0 flex items-center gap-2">
+                  <School className="w-6 h-6" /> Ajmal IAS Academy
                 </Badge>
               </div>
               
@@ -162,38 +163,38 @@ const HeroSection = () => {
               <div className="space-y-3">
                 <h4 className="font-bold text-gray-900 mb-4">Key Features</h4>
                 <div className="flex items-center text-gray-700">
-                  <div className="w-8 h-8 bg-red-50 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
-                    <Globe className="w-4 h-4 text-red-600" />
+                  <div className="w-8 h-8 bg-[#FFF0E1] rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                    <Globe className="w-4 h-4 text-orange-600" />
                   </div>
                   <span className="text-sm">360 degree coverage of UPSC CSE & APSC CCE Syllabus.</span>
                 </div>
                 <div className="flex items-center text-gray-700">
-                  <div className="w-8 h-8 bg-red-50 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
-                    <Star className="w-4 h-4 text-red-600" />
+                  <div className="w-8 h-8 bg-[#FFF0E1] rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                    <Star className="w-4 h-4 text-orange-600" />
                   </div>
                   <span className="text-sm">Nationally renowned faculties from Delhi and other parts of India.</span>
                 </div>
                 <div className="flex items-center text-gray-700">
-                  <div className="w-8 h-8 bg-red-50 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
-                    <UserCheck className="w-4 h-4 text-red-600" />
+                  <div className="w-8 h-8 bg-[#FFF0E1] rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                    <UserCheck className="w-4 h-4 text-orange-600" />
                   </div>
                   <span className="text-sm">One to One mentorship and Individual Care.</span>
                 </div>
                 <div className="flex items-center text-gray-700">
-                  <div className="w-8 h-8 bg-red-50 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
-                    <MessageCircle className="w-4 h-4 text-red-600" />
+                  <div className="w-8 h-8 bg-[#FFF0E1] rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                    <MessageCircle className="w-4 h-4 text-orange-600" />
                   </div>
                   <span className="text-sm">24*7 Doubt Clearance by our Expert Faculties.</span>
                 </div>
                 <div className="flex items-center text-gray-700">
-                  <div className="w-8 h-8 bg-red-50 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
-                    <BookOpen className="w-4 h-4 text-red-600" />
+                  <div className="w-8 h-8 bg-[#FFF0E1] rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                    <BookOpen className="w-4 h-4 text-orange-600" />
                   </div>
                   <span className="text-sm">Comprehensive Study material and Class Notes</span>
                 </div>
                 <div className="flex items-center text-gray-700">
-                  <div className="w-8 h-8 bg-red-50 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
-                    <Users className="w-4 h-4 text-red-600" />
+                  <div className="w-8 h-8 bg-[#FFF0E1] rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                    <Users className="w-4 h-4 text-orange-600" />
                   </div>
                   <span className="text-sm">Periodic interactive sessions with IAS, IPS, ACS Officers.</span>
                 </div>
@@ -201,13 +202,13 @@ const HeroSection = () => {
             </CardContent>
             
             <CardFooter>
-              <a
+              <Link
                 href="#ias"
-                className="w-full inline-flex items-center justify-center py-3 px-6 bg-red-500 text-white rounded-xl font-semibold hover:bg-red-600 transition-colors duration-300"
+                className="group relative isolate inline-flex items-center justify-center overflow-hidden text-left font-medium transition duration-300 ease-[cubic-bezier(0.4,0.36,0,1)] before:duration-300 before:ease-[cubic-bezier(0.4,0.36,0,1)] before:transtion-opacity rounded-md shadow-[0_1px_theme(colors.white/0.07)_inset,0_1px_3px_theme(colors.gray.900/0.2)] before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:rounded-md before:bg-gradient-to-b before:from-white/20 before:opacity-50 hover:before:opacity-100 after:pointer-events-none after:absolute after:inset-0 after:-z-10 after:rounded-md after:bg-gradient-to-b after:from-white/10 after:from-[46%] after:to-[54%] after:mix-blend-overlay text-sm h-[1.875rem] px-3 ring-1 bg-orange-500 text-white ring-orange-500 w-full py-3"
               >
                 Learn More About Ajmal IAS Academy
                 <ArrowRight className="w-4 h-4 ml-2" />
-              </a>
+              </Link>
             </CardFooter>
           </Card>
         </div>

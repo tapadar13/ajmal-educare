@@ -51,15 +51,11 @@ const MethodologySection = () => {
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <div className="text-center mb-20">
-          <Badge className="mb-8 bg-gray-100 text-gray-700 border-gray-200 px-6 py-2 text-sm font-medium">
-            ✨ Our Teaching Methodology
-          </Badge>
-          
-          <h2 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-gray-900 mb-8 leading-tight">
+           <h2 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-gray-900 mb-8 leading-tight">
             Our Teaching{' '}
-            <AnimatedShinyText className="text-4xl sm:text-5xl lg:text-7xl font-bold">
+            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Methodology
-            </AnimatedShinyText>
+            </span>
           </h2>
           
           <p className="text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
@@ -102,14 +98,6 @@ const MethodologySection = () => {
               </div>
             </MagicCard>
           ))}
-        </div>
-
-        {/* Bottom decorative section */}
-        <div className="mt-20 text-center">
-          <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gray-100/80 backdrop-blur-sm border border-gray-200">
-            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-            <span className="text-sm text-gray-700 font-medium">Proven methodology with 95% success rate</span>
-          </div>
         </div>
       </div>
     </section>

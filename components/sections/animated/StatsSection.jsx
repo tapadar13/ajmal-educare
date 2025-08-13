@@ -48,7 +48,7 @@ const StatsSection = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-5xl font-bold text-gray-900 mb-4">
-              Our Achievements Speak for Themselves
+                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Our Achievements</span> Speak for Themselves
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
               Numbers that reflect our commitment to excellence and student success
@@ -62,11 +62,16 @@ const StatsSection = () => {
               return (
                 <motion.div 
                   key={index} 
-                  className="bg-gray-100 rounded-2xl p-6 shadow-lg border border-gray-200"
+                  className="relative bg-gray-100 rounded-2xl p-6 shadow-lg"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                 >
+                  {/* Gradient border */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-[1px]">
+                    <div className="bg-gray-100 rounded-2xl h-full w-full"></div>
+                  </div>
+                  <div className="relative z-10">
                   <div className="text-center">
                     {/* Icon */}
                     <motion.div 
@@ -76,7 +81,7 @@ const StatsSection = () => {
                       viewport={{ once: true }}
                       transition={{ delay: index * 0.1 + 0.2, duration: 0.5 }}
                     >
-                      <div className="bg-gray-500 p-3 rounded-full">
+                      <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-3 rounded-full">
                         <IconComponent className="w-6 h-6 text-white" />
                       </div>
                     </motion.div>
@@ -102,6 +107,7 @@ const StatsSection = () => {
                     >
                       {stat.label}
                     </motion.div>
+                  </div>
                   </div>
                 </motion.div>
               );

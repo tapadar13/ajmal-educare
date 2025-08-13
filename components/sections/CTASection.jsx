@@ -21,12 +21,12 @@ const CTASection = () => {
       <div className="absolute top-1/2 left-10 w-16 h-16 border border-gray-200 rounded-full opacity-30"></div>
       <div className="absolute top-1/4 right-1/3 w-12 h-12 border border-gray-200 rounded-full opacity-30"></div>
       
-      <div className="relative py-20 lg:py-32">
+      <div className="relative py-20 lg:py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
               Ready to Begin Your{' '}
-              <span className="text-gray-600">Success Journey?</span>
+              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Success Journey?</span>
             </h2>
             
             <p className="text-xl lg:text-2xl text-gray-600 mb-12 leading-relaxed">

@@ -68,15 +68,16 @@ const EventNotification = ({ title, description, icon, color, time, date }) => {
         <div className="flex flex-col overflow-hidden">
           <figcaption className="flex flex-row items-center whitespace-pre text-lg font-medium dark:text-white ">
             <span className="text-sm sm:text-lg">{title}</span>
-            <span className="mx-1">·</span>
-            <span className="text-xs text-gray-500">{time}</span>
           </figcaption>
-          <p className="text-sm font-normal dark:text-white/60">
+          <p className="text-sm font-normal dark:text-white/60 mb-2">
             {description}
           </p>
-          <div className="flex items-center text-xs text-gray-500 mt-1">
-            <Calendar className="w-3 h-3 mr-1" />
-            {date.day} {date.month}
+          <div className="flex items-center justify-between text-xs text-gray-500">
+            <div className="flex items-center">
+              <Calendar className="w-3 h-3 mr-1" />
+              {date.day} {date.month}
+            </div>
+            <span>{time}</span>
           </div>
         </div>
       </div>
@@ -178,7 +179,7 @@ const NewsSection = () => {
   return (
     <>
       {/* Latest News & Updates Section */}
-      <section id="news" className="py-20 lg:py-32 bg-white">
+      <section id="news" className="py-20 lg:py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <Badge className="mb-8">
@@ -202,26 +203,22 @@ const NewsSection = () => {
             {/* News Items */}
             <div className="lg:col-span-2 space-y-6">
               {newsItems.map((item, index) => (
-                <Card key={index} className="group hover:border-gray-300 transition-all duration-300 border border-gray-200 bg-white overflow-hidden rounded-xl">
+                <Card key={index} className="group hover:border-gray-300 transition-all duration-300 border border-gray-200 bg-white overflow-hidden rounded-xl p-0 py-0 gap-0">
                   <CardContent className="p-0">
                     <div className="flex flex-col md:flex-row h-full">
                       {/* Image */}
-                      <div className="md:w-1/3 h-64 md:h-auto bg-gray-50 relative overflow-hidden">
+                      <div className="md:w-1/3 h-64 md:h-auto bg-gray-50 overflow-hidden">
                         <img 
                           src={item.image} 
                           alt={item.title}
-                          className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                          className="w-full h-full object-cover"
                         />
-                        <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors duration-300" />
                       </div>
                       
                       {/* Content */}
                       <div className="md:w-2/3 p-6 lg:p-8 flex flex-col justify-between">
                         <div>
                           <div className="flex items-center mb-4">
-                            <Badge className="bg-gray-100 text-gray-700 border-0 rounded-lg px-3 py-1 text-xs font-medium mr-3">
-                              {item.type}
-                            </Badge>
                             <div className="flex items-center text-gray-500 text-sm">
                               <Calendar className="w-4 h-4 mr-2" />
                               {item.date}
@@ -237,10 +234,10 @@ const NewsSection = () => {
                           </p>
                         </div>
                         
-                        <Button variant="ghost" className="text-blue-600 hover:text-blue-700 hover:bg-blue-50 p-0 h-auto font-semibold group self-start">
+                        <p className="flex items-center justify-betweentext-blue-500 p-0 h-auto font-semibold group self-start">
                           Read More
-                          <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                        </Button>
+                          <ArrowRight className="w-4 h-4 ml-2" />
+                        </p>
                       </div>
                     </div>
                   </CardContent>
@@ -249,9 +246,9 @@ const NewsSection = () => {
             </div>
 
             {/* Upcoming Events */}
-            <div ref={eventsRef}>
-              <Card className="border border-gray-200 bg-white sticky top-8 rounded-xl">
-                <CardContent className="p-6">
+            <div ref={eventsRef} className="h-full">
+              <Card className="border border-gray-200 bg-white sticky top-8 rounded-xl h-full">
+                <CardContent className="p-6 h-full flex flex-col">
                   <div className="flex items-center mb-6">
                     <div className="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center mr-3">
                       <Calendar className="w-5 h-5 text-blue-600" />
@@ -259,7 +256,7 @@ const NewsSection = () => {
                     <h3 className="text-xl font-bold text-gray-900">Upcoming Events</h3>
                   </div>
                   
-                  <div className="relative flex h-[400px] w-full flex-col overflow-hidden">
+                  <div className="relative flex flex-1 w-full flex-col overflow-hidden">
                     {hasEventsBeenInView ? (
                       <AnimatedList delay={1000}>
                         {upcomingEvents.map((event, idx) => (
@@ -277,7 +274,7 @@ const NewsSection = () => {
                     <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-white"></div>
                   </div>
                   
-                  <Button variant="outline" className="w-full mt-6 border-blue-200 text-blue-600 hover:bg-blue-50 hover:border-blue-300 rounded-lg">
+                  <Button variant="outline" className="w-full mt-6">
                     View All Events
                   </Button>
                 </CardContent>
@@ -296,9 +293,9 @@ const NewsSection = () => {
               </Badge>
               
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-                LIST OF NEWS &{' '}
+                LIST OF{' '}
                 <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                  MEDIA
+                  NEWS & MEDIA
                 </span>
               </h2>
             </div>
@@ -309,7 +306,7 @@ const NewsSection = () => {
                 {videos.map((item, index) => (
                   <CarouselItem key={index} className={cn("basis-full sm:basis-1/2 lg:basis-1/3")}> 
                     <a href={item.url} target="_blank" rel="noopener noreferrer">
-                      <Card className="group hover:border-gray-300 transition-all duration-300 border border-gray-200 bg-white overflow-hidden rounded-xl">
+                      <Card className="group hover:border-gray-300 transition-all duration-300 border border-gray-200 bg-white overflow-hidden rounded-xl p-0 py-0 gap-0">
                         <CardContent className="p-0">
                           <div className="relative aspect-video bg-gray-100 overflow-hidden">
                             {/* Video thumbnail image */}
