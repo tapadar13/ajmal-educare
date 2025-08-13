@@ -2,10 +2,9 @@
 
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
-import { Badge } from '@/components/ui/badge'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import Image from 'next/image'
-import { Award, BarChart3, MessageSquare, BookOpen, Heart } from 'lucide-react'
+import { Award, MessageSquare, BookOpen, Heart, ClipboardList } from 'lucide-react'
 import { ShineBorder } from '@/components/magicui/shine-border'
 
 function GradientIcon({ Icon, id }) {
@@ -103,10 +102,10 @@ export default function AboutPage() {
                 <Card className="relative z-0 rounded-[inherit] h-full shadow-none">
                   <CardHeader className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">
-                      {GradientIcon({ Icon: BarChart3, id: 'card-bars' })}
+                      {GradientIcon({ Icon: ClipboardList, id: 'card-tests' })}
                     </div>
-                  <CardTitle className="text-gray-900">Weekly Mock Tests &amp; Detailed Analysis</CardTitle>
-                </CardHeader>
+                    <CardTitle className="text-gray-900">Weekly Mock Tests &amp; Detailed Analysis</CardTitle>
+                  </CardHeader>
                 <CardContent>
                   <CardDescription className="text-gray-600">
                     We simulate real NEET/JEE conditions every week. Tests are followed by in depth analysis and
@@ -177,7 +176,7 @@ export default function AboutPage() {
         <section className="py-12 lg:py-16 bg-yellow-200/60">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-10">
-              Our Outstanding Performers in NEET &amp; JEE
+              Our <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Outstanding Performers</span> in NEET &amp; JEE
             </h2>
             <div className="space-y-8">
               <div className="rounded-xl overflow-hidden shadow-xl border border-yellow-300/40">
