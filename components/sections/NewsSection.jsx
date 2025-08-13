@@ -134,36 +134,31 @@ const NewsSection = () => {
   const mediaItems = [
     {
       type: "video",
-      title: "Producing Doctors at Ajmal Super 40",
+      title: "News18 Documentary",
+      thumbnail: "/images/news-media/news18-documentary.jpg"
     },
     {
       type: "video",
-      title: "Real Environment at Ajmal Super 40", 
-      thumbnail: "/images/video2-thumb.jpg"
+      title: "DY365",
+      thumbnail: "/images/news-media/dy365-digital.jpg"
     },
     {
       type: "video",
-      title: "Mock Interview at Ajmal IAS Academy",
-      thumbnail: "/images/video3-thumb.jpg"
+      title: "Monuwar Zama YT",
+      thumbnail: "/images/news-media/english-house.jpg"
     },
     {
       type: "video",
-      title: "Ajmal IAS Academy",
-      thumbnail: "/images/video4-thumb.jpg"
-    },
-    {
-      type: "video",
-      title: "Ajmal Video",
-      thumbnail: "/images/video5-thumb.jpg"
+      title: "NEWS18 Northeast",
+      thumbnail: "/images/news-media/news18-ias-academy.jpg"
     }
   ]
 
   const videoLinks = [
-    "https://www.facebook.com/watch/live/?ref=watch_permalink&v=593685266942443&rdid=a7UTygcAx4T9s8Ye",
     "https://www.youtube.com/watch?v=5WqX-WB0BbM",
     "https://www.facebook.com/watch/live/?extid=CL-UNK-UNK-UNK-AN_GK0T-GK1C&mibextid=Nif5oz&ref=watch_permalink&v=2062011300809689",
-    "https://www.youtube.com/watch?v=eDBroGiI_Ps",
     "https://www.youtube.com/watch?v=AYbgKG7Blag",
+    "https://www.youtube.com/watch?v=GREbaiOIC3A",
   ]
 
   const videos = videoLinks.map((url, index) => ({
@@ -367,23 +362,23 @@ const NewsSection = () => {
                       <Card className="group hover:border-gray-300 transition-all duration-300 border-2 border-gray-200 bg-white overflow-hidden rounded-xl p-0 py-0 gap-0 shadow-none">
                         <CardContent className="p-0">
                           <div className="relative aspect-video bg-gray-100 overflow-hidden">
+                            {/* Fallback background for missing images (beneath) */}
+                            <div className="absolute inset-0 bg-gradient-to-br from-blue-100 to-purple-100 z-0" />
                             {/* Video thumbnail image */}
                             <div 
-                              className="absolute inset-0 bg-cover bg-center"
+                              className="absolute inset-0 bg-cover bg-center z-10"
                               style={{
-                                backgroundImage: `url(${item.thumbnail})`,
+                                backgroundImage: `url("${item.thumbnail}")`,
                               }}
                             />
-                            {/* Fallback background for missing images */}
-                            <div className="absolute inset-0 bg-gradient-to-br from-blue-100 to-purple-100" />
-                            
-                            {/* Play button overlay */}
-                            <div className="absolute inset-0 flex items-center justify-center">
+                            {/* Dark overlay above image */}
+                            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors duration-300 z-20" />
+                            {/* Play button overlay (topmost) */}
+                            <div className="absolute inset-0 flex items-center justify-center z-30">
                               <div className="w-16 h-16 bg-black/50 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                                 <Play className="w-8 h-8 text-white ml-1" />
                               </div>
                             </div>
-                            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors duration-300" />
                           </div>
                           <div className="p-4">
                             <h4 className="font-semibold text-gray-900 text-center line-clamp-2 min-h-[3rem] flex items-center justify-center">
