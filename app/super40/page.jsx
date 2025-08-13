@@ -180,13 +180,13 @@ export default function Super40Page() {
             </h2>
             <div className="space-y-8">
               <div className="rounded-xl overflow-hidden shadow-xl border border-yellow-300/40">
-                <Image src="/images/about/neet-1.jpg" alt="Outstanding performers in NEET" width={1600} height={900} className="w-full h-auto" />
+                <Image src="/images/super40/neet-1.jpg" alt="Outstanding performers in NEET" width={1600} height={900} className="w-full h-auto" />
               </div>
               <div className="rounded-xl overflow-hidden shadow-xl border border-yellow-300/40">
-                <Image src="/images/about/neet-2.jpg" alt="Outstanding performers in NEET" width={1600} height={900} className="w-full h-auto" />
+                <Image src="/images/super40/neet-2.jpg" alt="Outstanding performers in NEET" width={1600} height={900} className="w-full h-auto" />
               </div>
               <div className="rounded-xl overflow-hidden shadow-xl border border-yellow-300/40">
-                <Image src="/images/about/jee.jpg" alt="Outstanding performers in JEE" width={1600} height={900} className="w-full h-auto" />
+                <Image src="/images/super40/jee.jpg" alt="Outstanding performers in JEE" width={1600} height={900} className="w-full h-auto" />
               </div>
             </div>
           </div>
