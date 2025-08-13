@@ -3,6 +3,7 @@
 import { Badge } from '@/components/ui/badge'
 import { MagicCard } from '@/components/magicui/magic-card'
 import { AnimatedShinyText } from '@/components/magicui/animated-shiny-text'
+import { ShineBorder } from '@/components/magicui/shine-border'
 
 const MethodologySection = () => {
   const methodologies = [
