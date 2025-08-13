@@ -12,7 +12,7 @@ const academies = [
     label: "Ajmal Super 40", 
     icon: GraduationCap, 
     color: "#4F46E5", // Using primary color from your theme
-    href: "#super40" 
+    href: "/super40" 
   },
   { 
     id: "ias", 

@@ -30,7 +30,7 @@ const Header = () => {
     { name: 'Our Academies', href: '#academies',
       hasDropdown: true,
       dropdownItems: [
-        { name: 'Ajmal Super 40', href: '#super40' },
+        { name: 'Ajmal Super 40', href: '/super40' },
         { name: 'Ajmal IAS Academy', href: '#ias' }
       ]
      },
@@ -69,8 +69,7 @@ const Header = () => {
                   <div key={item.name} className="relative group">
                     {item.hasDropdown ? (
                       <AnimatedDropdown 
-                        onItem={(academy) => {
-                          // Handle navigation to academy page
+                        onItemClick={(academy) => {
                           window.location.href = academy.href;
                         }}
                       />

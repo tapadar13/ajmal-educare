@@ -11,7 +11,7 @@ const Footer = () => {
   ]
 
   const programs = [
-    { name: 'Ajmal Super 40', href: '#super40' },
+    { name: 'Ajmal Super 40', href: '/super40' },
     { name: 'Ajmal IAS Academy', href: '#ias' },
     { name: 'JEE Preparation', href: '#jee' },
     { name: 'NEET Coaching', href: '#neet' },
