@@ -68,35 +68,26 @@ const MethodologySection = () => {
         {/* Cards Grid */}
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {methodologies.map((method, index) => (
-            <MagicCard
-              key={index}
-              className="group h-full rounded-2xl p-0"
-              gradientColor="rgba(255, 255, 255, 0.1)"
-              gradientFrom="#3B82F6"
-              gradientTo="#8B5CF6"
-              gradientSize={300}
-            >
-              <div className="h-full p-8 lg:p-10 flex flex-col">
-                {/* Number badge */}
-                <div className="mb-6">
-                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-gray-100 to-gray-50 border border-gray-200 group-hover:scale-110 transition-transform duration-300 shadow-sm">
-                    <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <div key={index} className="relative rounded-2xl group h-full">
+              <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
+              <div className="relative z-0 h-full rounded-[inherit] bg-white/80 backdrop-blur-2xl border border-white/30 p-8 lg:p-10 flex flex-col">
+                {/* Number + Title inline */}
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="inline-flex items-center justify-center rounded-2xl bg-gradient-to-br from-gray-100 to-gray-50 border border-gray-200 group-hover:scale-110 transition-transform duration-300 shadow-sm p-4">
+                    <span className="text-2xl leading-none font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                       {method.number}
                     </span>
                   </div>
+                  <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 leading-tight">
+                    {method.title}
+                  </h3>
                 </div>
-                
-                {/* Title */}
-                <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-6 leading-tight">
-                  {method.title}
-                </h3>
-                
                 {/* Description */}
                 <p className="text-gray-600 leading-relaxed text-lg flex-grow">
                   {method.description}
                 </p>
               </div>
-            </MagicCard>
+            </div>
           ))}
         </div>
       </div>
