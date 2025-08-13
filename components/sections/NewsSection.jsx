@@ -195,6 +195,18 @@ const NewsSection = () => {
     }
   ]
 
+  // Autoplay for News & Media carousel
+  const [carouselApi, setCarouselApi] = useState(null)
+  useEffect(() => {
+    if (!carouselApi) return
+    const intervalId = setInterval(() => {
+      try {
+        carouselApi.scrollNext()
+      } catch (_) {}
+    }, 4000) // 4s interval
+    return () => clearInterval(intervalId)
+  }, [carouselApi])
+
   return (
     <>
       {/* Latest News & Updates Section */}
@@ -354,7 +366,7 @@ const NewsSection = () => {
             </div>
 
           <div className="relative max-w-7xl mx-auto">
-            <Carousel className="w-full px-12" opts={{ loop: true }}>
+            <Carousel className="w-full px-12" opts={{ loop: true }} setApi={setCarouselApi}>
               <CarouselContent className="py-3">
                 {videos.map((item, index) => (
                   <CarouselItem key={index} className={cn("basis-full sm:basis-1/2 lg:basis-1/3")}> 
