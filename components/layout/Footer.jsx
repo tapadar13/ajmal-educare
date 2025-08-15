@@ -38,10 +38,6 @@ const Footer = () => {
                 Empowering students to achieve their dreams through innovative teaching 
                 methodologies and comprehensive educational programs.
               </p>
-              
-              <Badge className="bg-gray-800 text-gray-300 border-gray-700">
-                Award-Winning Institution
-              </Badge>
             </div>
 
             {/* Quick Links */}
