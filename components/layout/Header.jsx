@@ -47,9 +47,10 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center space-x-3">
-              <div className="hidden sm:block">
-                <h1 className="text-xl font-bold text-gray-900">
-                  Ajmal Educare India Pvt Ltd
+              <div className="block">
+                <h1 className="text-lg sm:text-xl font-bold text-gray-900">
+                  <span className="sm:hidden">Ajmal Educare Pvt Ltd</span>
+                  <span className="hidden sm:block">Ajmal Educare India Pvt Ltd</span>
                 </h1>
               </div>
             </Link>

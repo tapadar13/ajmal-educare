@@ -13,7 +13,7 @@ const HeroSection = () => {
       <div className="absolute bottom-20 left-20 w-96 h-96 bg-gray-100/50 rounded-full blur-3xl" />
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gray-100/30 rounded-full blur-3xl" />
       
-      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 pt-20 lg:pt-8 lg:pb-8 ">
+      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-20 lg:pt-8 lg:pb-8 pb-8 sm:pb-0">
         {/* Main Hero Content */}
         <div className="text-center mb-10">
           {/* <Badge 
@@ -114,7 +114,7 @@ const HeroSection = () => {
               </div>
             </CardContent>
             
-            <CardFooter>
+            <CardFooter className="pb-6 sm:pb-4">
               <Link
                 href="/super40"
                 className="group relative isolate inline-flex items-center justify-center overflow-hidden text-left font-medium transition duration-300 ease-[cubic-bezier(0.4,0.36,0,1)] before:duration-300 before:ease-[cubic-bezier(0.4,0.36,0,1)] before:transtion-opacity rounded-md shadow-[0_1px_theme(colors.white/0.07)_inset,0_1px_3px_theme(colors.gray.900/0.2)] before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:rounded-md before:bg-gradient-to-b before:from-white/20 before:opacity-50 hover:before:opacity-100 after:pointer-events-none after:absolute after:inset-0 after:-z-10 after:rounded-md after:bg-gradient-to-b after:from-white/10 after:from-[46%] after:to-[54%] after:mix-blend-overlay text-sm h-[1.875rem] px-3 ring-1 bg-blue-500 text-white ring-blue-500 w-full py-3"
@@ -201,7 +201,7 @@ const HeroSection = () => {
               </div>
             </CardContent>
             
-            <CardFooter>
+            <CardFooter className="pb-6 sm:pb-4">
               <Link
                 href="/ias"
                 className="group relative isolate inline-flex items-center justify-center overflow-hidden text-left font-medium transition duration-300 ease-[cubic-bezier(0.4,0.36,0,1)] before:duration-300 before:ease-[cubic-bezier(0.4,0.36,0,1)] before:transtion-opacity rounded-md shadow-[0_1px_theme(colors.white/0.07)_inset,0_1px_3px_theme(colors.gray.900/0.2)] before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:rounded-md before:bg-gradient-to-b before:from-white/20 before:opacity-50 hover:before:opacity-100 after:pointer-events-none after:absolute after:inset-0 after:-z-10 after:rounded-md after:bg-gradient-to-b after:from-white/10 after:from-[46%] after:to-[54%] after:mix-blend-overlay text-sm h-[1.875rem] px-3 ring-1 bg-orange-500 text-white ring-orange-500 w-full py-3"

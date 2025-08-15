@@ -6,7 +6,7 @@ import { ShineBorder } from '@/components/magicui/shine-border'
 
 const MissionVisionSection = () => {
   return (
-    <section className="min-h-screen py-20 lg:py-16 bg-gradient-to-br from-gray-50 via-white to-blue-50/30 relative overflow-hidden">
+    <section className="min-h-screen pt-8 pb-20 sm:py-20 lg:py-16 bg-gradient-to-br from-gray-50 via-white to-blue-50/30 relative overflow-hidden">
       {/* Animated Background Grid */}
       <div className="absolute inset-0 opacity-40">
         <div className="absolute inset-0" style={{
@@ -48,7 +48,7 @@ const MissionVisionSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-fr">
             
             {/* Vision Header Card - Spans 2 columns */}
-            <div className="md:col-span-2 group h-full">
+            <div className="col-span-1 md:col-span-2 group h-full">
               <div className="relative rounded-3xl h-full">
                 <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
                 <div className="relative z-0 h-full bg-white/80 backdrop-blur-2xl rounded-[inherit] p-8 border border-white/30 shadow-2xl hover:shadow-3xl overflow-hidden min-h-[300px]">
@@ -75,7 +75,7 @@ const MissionVisionSection = () => {
             </div>
 
             {/* Mission Header Card - Spans 2 columns */}
-            <div className="md:col-span-2 group h-full">
+            <div className="col-span-1 md:col-span-2 group h-full">
               <div className="relative rounded-3xl h-full">
                 <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
                 <div className="relative z-0 h-full bg-white/80 backdrop-blur-2xl rounded-[inherit] p-8 border border-white/30 shadow-2xl hover:shadow-3xl overflow-hidden min-h-[300px]">

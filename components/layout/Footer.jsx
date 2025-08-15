@@ -23,7 +23,7 @@ const Footer = () => {
       
       <div className="relative">
         {/* Main Footer Content */}
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16">
           <div className="grid lg:grid-cols-4 gap-8 lg:gap-12">
             {/* Company Info */}
             <div className="lg:col-span-1">

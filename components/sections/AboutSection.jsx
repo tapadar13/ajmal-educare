@@ -5,7 +5,7 @@ import { AnimatedShinyText } from '@/components/magicui/animated-shiny-text'
 
 const AboutSection = () => {
   return (
-    <section id="about" className="relative py-20 lg:py-8 bg-white overflow-hidden">
+    <section id="about" className="relative pt-8 pb-8 sm:py-20 lg:py-8 bg-white overflow-hidden">
       {/* Box type background design */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-10 left-10 w-20 h-20 border-2 border-gray-200 rounded-lg"></div>
@@ -17,12 +17,12 @@ const AboutSection = () => {
       </div>
       
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <Badge className="mb-8 bg-gray-100 text-gray-700 border-gray-200">
+        <div className="text-center mb-8 sm:mb-16">
+          <Badge className="mb-6 sm:mb-8 bg-gray-100 text-gray-700 border-gray-200">
             📖 About Ajmal Educare
           </Badge>
           
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-0 sm:mb-6">
             Our Foundation{' '}
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Story

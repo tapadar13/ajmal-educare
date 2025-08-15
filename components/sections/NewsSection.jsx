@@ -210,7 +210,7 @@ const NewsSection = () => {
   return (
     <>
       {/* Latest News & Updates Section */}
-      <section id="news" className="py-20 lg:py-16 bg-white">
+      <section id="news" className="py-12 sm:py-20 lg:py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <Badge className="mb-8">
@@ -350,7 +350,7 @@ const NewsSection = () => {
       </section>
 
       {/* News & Media Section */}
-      <section className="py-20 lg:py-16 bg-gray-50">
+      <section className="py-12 sm:py-20 lg:py-16 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                       <div className="text-center mb-8">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">

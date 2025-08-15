@@ -34,7 +34,7 @@ const MethodologySection = () => {
   ]
 
   return (
-    <section className="relative py-20 lg:py-16 bg-gray-50 overflow-hidden">
+    <section className="relative pt-8 pb-20 sm:py-20 lg:py-16 bg-gray-50 overflow-hidden">
       {/* Small box type background design */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-16 left-8 w-8 h-8 border border-gray-300 rounded"></div>
