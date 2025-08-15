@@ -83,9 +83,8 @@ export default function AboutPage() {
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="relative rounded-2xl">
-                <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
-                <Card className="rounded-[inherit] shadow-none gap-2">
+              <div className="relative rounded-2xl border-2 border-black">
+                <Card className="rounded-[inherit] shadow-none gap-2 border-0">
                 <CardHeader className="pt-6">
                   <CardTitle className="flex items-center gap-3 text-xl">
                     <BookOpen className="w-5 h-5 text-gray-700" /> Mission-Driven Focus
@@ -99,9 +98,8 @@ export default function AboutPage() {
                 </Card>
               </div>
 
-              <div className="relative rounded-2xl">
-                <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
-                <Card className="rounded-[inherit] shadow-none gap-2">
+              <div className="relative rounded-2xl border-2 border-black">
+                <Card className="rounded-[inherit] shadow-none gap-2 border-0">
                 <CardHeader className="pt-6">
                   <CardTitle className="flex items-center gap-3 text-xl">
                     <Award className="w-5 h-5 text-gray-700" /> Proven Results
@@ -115,9 +113,8 @@ export default function AboutPage() {
                 </Card>
               </div>
 
-              <div className="relative rounded-2xl">
-                <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
-                <Card className="rounded-[inherit] shadow-none gap-2">
+              <div className="relative rounded-2xl border-2 border-black">
+                <Card className="rounded-[inherit] shadow-none gap-2 border-0">
                   <CardHeader className="pt-6">
                     <CardTitle className="flex items-center gap-3 text-xl">
                       <ClipboardList className="w-5 h-5 text-gray-700" /> Exceptional Faculty
@@ -135,9 +132,8 @@ export default function AboutPage() {
 
               {/* Center bottom two cards */}
               <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                <div className="relative rounded-2xl">
-                  <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
-                  <Card className="rounded-[inherit] shadow-none gap-2">
+                <div className="relative rounded-2xl border-2 border-black">
+                  <Card className="rounded-[inherit] shadow-none gap-2 border-0">
                     <CardHeader className="pt-6">
                       <CardTitle className="flex items-center gap-3 text-xl">
                         <Heart className="w-5 h-5 text-gray-700" /> Holistic Development
@@ -150,9 +146,8 @@ export default function AboutPage() {
                     </CardContent>
                   </Card>
                 </div>
-                <div className="relative rounded-2xl">
-                  <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
-                  <Card className="rounded-[inherit] shadow-none gap-2">
+                <div className="relative rounded-2xl border-2 border-black">
+                  <Card className="rounded-[inherit] shadow-none gap-2 border-0">
                     <CardHeader className="pt-6">
                       <CardTitle className="flex items-center gap-3 text-xl">
                         <MessageSquare className="w-5 h-5 text-gray-700" /> Focus on Rural Talent
@@ -179,9 +174,8 @@ export default function AboutPage() {
               </h3>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="relative rounded-2xl">
-                <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
-                <Card className="rounded-[inherit] shadow-none gap-2">
+              <div className="relative rounded-2xl border-2 border-black">
+                <Card className="rounded-[inherit] shadow-none gap-2 border-0">
                 <CardHeader className="pt-6">
                   <CardTitle className="text-xl">Scholarship Led Access</CardTitle>
                 </CardHeader>
@@ -191,9 +185,8 @@ export default function AboutPage() {
                 </Card>
               </div>
 
-              <div className="relative rounded-2xl">
-                <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
-                <Card className="rounded-[inherit] shadow-none gap-2">
+              <div className="relative rounded-2xl border-2 border-black">
+                <Card className="rounded-[inherit] shadow-none gap-2 border-0">
                 <CardHeader className="pt-6">
                   <CardTitle className="text-xl">Rigorous Academics</CardTitle>
                 </CardHeader>
@@ -203,9 +196,8 @@ export default function AboutPage() {
                 </Card>
               </div>
 
-              <div className="relative rounded-2xl">
-                <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
-                <Card className="rounded-[inherit] shadow-none gap-2">
+              <div className="relative rounded-2xl border-2 border-black">
+                <Card className="rounded-[inherit] shadow-none gap-2 border-0">
                 <CardHeader className="pt-6">
                   <CardTitle className="text-xl">Subject-Matter Experts</CardTitle>
                 </CardHeader>
@@ -217,9 +209,8 @@ export default function AboutPage() {
 
               {/* Center bottom two cards */}
               <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                <div className="relative rounded-2xl">
-                  <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
-                  <Card className="rounded-[inherit] shadow-none gap-2">
+                <div className="relative rounded-2xl border-2 border-black">
+                  <Card className="rounded-[inherit] shadow-none gap-2 border-0">
                     <CardHeader className="pt-6">
                       <CardTitle className="text-xl">Beyond Exams</CardTitle>
                     </CardHeader>
@@ -228,9 +219,8 @@ export default function AboutPage() {
                     </CardContent>
                   </Card>
                 </div>
-                <div className="relative rounded-2xl">
-                  <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
-                  <Card className="rounded-[inherit] shadow-none gap-2">
+                <div className="relative rounded-2xl border-2 border-black">
+                  <Card className="rounded-[inherit] shadow-none gap-2 border-0">
                     <CardHeader className="pt-6">
                       <CardTitle className="text-xl">Community Impact</CardTitle>
                     </CardHeader>

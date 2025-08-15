@@ -79,9 +79,8 @@ export default function Super40Page() {
               Why <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Ajmal Super40</span> Stands Out
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-6">
-              <div className="relative rounded-2xl lg:col-span-2">
-                <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
-                <Card className="relative z-0 rounded-[inherit] h-full shadow-none">
+              <div className="relative rounded-2xl lg:col-span-2 border-2 border-black">
+                <Card className="relative z-0 rounded-[inherit] h-full shadow-none border-0">
                   <CardHeader className="flex items-center gap-3 pt-6">
                     <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">
                       {GradientIcon({ Icon: Award, id: 'card-award' })}
@@ -97,9 +96,8 @@ export default function Super40Page() {
                 </Card>
               </div>
 
-              <div className="relative rounded-2xl lg:col-span-2">
-                <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
-                <Card className="relative z-0 rounded-[inherit] h-full shadow-none">
+              <div className="relative rounded-2xl lg:col-span-2 border-2 border-black">
+                <Card className="relative z-0 rounded-[inherit] h-full shadow-none border-0">
                   <CardHeader className="flex items-center gap-3 pt-6">
                     <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">
                       {GradientIcon({ Icon: ClipboardList, id: 'card-tests' })}
@@ -115,15 +113,14 @@ export default function Super40Page() {
                 </Card>
               </div>
 
-              <div className="relative rounded-2xl lg:col-span-2">
-                <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
-                <Card className="relative z-0 rounded-[inherit] h-full shadow-none">
+                            <div className="relative rounded-2xl lg:col-span-2 border-2 border-black">
+                <Card className="relative z-0 rounded-[inherit] h-full shadow-none border-0">
                   <CardHeader className="flex items-center gap-3 pt-6">
                     <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">
                       {GradientIcon({ Icon: MessageSquare, id: 'card-msg' })}
                     </div>
                   <CardTitle className="text-gray-900">Individualized Doubt Sessions</CardTitle>
-                </CardHeader>
+                  </CardHeader>
                 <CardContent className="pb-6">
                   <CardDescription className="text-gray-600">
                     Our teachers are available around the clock for one-on-one doubt resolution, ensuring personalized
@@ -133,15 +130,14 @@ export default function Super40Page() {
                 </Card>
               </div>
 
-              <div className="relative rounded-2xl lg:col-span-2 lg:col-start-2">
-                <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
-                <Card className="relative z-0 rounded-[inherit] h-full shadow-none">
+                            <div className="relative rounded-2xl lg:col-span-2 lg:col-start-2 border-2 border-black">
+                <Card className="relative z-0 rounded-[inherit] h-full shadow-none border-0">
                   <CardHeader className="flex items-center gap-3 pt-6">
                     <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">
                       {GradientIcon({ Icon: BookOpen, id: 'card-book' })}
                     </div>
                   <CardTitle className="text-gray-900">Focused Teaching for Board &amp; Entrance Exams</CardTitle>
-                </CardHeader>
+                  </CardHeader>
                 <CardContent className="pb-6">
                   <CardDescription className="text-gray-600">
                     We prepare Class XI and XII students for board exams concurrently with NEET/JEE, avoiding
@@ -151,15 +147,14 @@ export default function Super40Page() {
                 </Card>
               </div>
 
-              <div className="relative rounded-2xl lg:col-span-2">
-                <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
-                <Card className="relative z-0 rounded-[inherit] h-full shadow-none">
+                            <div className="relative rounded-2xl lg:col-span-2 border-2 border-black">
+                <Card className="relative z-0 rounded-[inherit] h-full shadow-none border-0">
                   <CardHeader className="flex items-center gap-3 pt-6">
                     <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">
                       {GradientIcon({ Icon: Heart, id: 'card-heart' })}
                     </div>
                   <CardTitle className="text-gray-900">Holistic Mentorship &amp; Motivation</CardTitle>
-                </CardHeader>
+                  </CardHeader>
                 <CardContent className="pb-6">
                   <CardDescription className="text-gray-600">
                     From motivational sessions to performance tracking, students receive emotional and academic
@@ -203,18 +198,16 @@ export default function Super40Page() {
             </p>
 
             <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-              <div className="relative rounded-2xl">
-                <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
-                <Card className="relative z-0 rounded-[inherit] h-full shadow-none">
+              <div className="relative rounded-2xl border-2 border-black">
+                <Card className="relative z-0 rounded-[inherit] h-full shadow-none border-0">
                   <CardHeader className="py-6">
                     <CardTitle className="text-gray-900">Test Series</CardTitle>
                     <CardDescription className="text-gray-600">Test series</CardDescription>
                   </CardHeader>
                 </Card>
               </div>
-              <div className="relative rounded-2xl">
-                <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
-                <Card className="relative z-0 rounded-[inherit] h-full shadow-none">
+              <div className="relative rounded-2xl border-2 border-black">
+                <Card className="relative z-0 rounded-[inherit] h-full shadow-none border-0">
                   <CardHeader className="py-6">
                     <CardTitle className="text-gray-900">One Year Integrated Course</CardTitle>
                     <CardDescription className="text-gray-600">For students who have passed class XII</CardDescription>

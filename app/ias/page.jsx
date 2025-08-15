@@ -53,9 +53,8 @@ export default function IASAcademyPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-10">Our Facilities</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="relative rounded-2xl">
-                <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
-                <Card className="relative z-0 rounded-[inherit] h-full shadow-none">
+              <div className="relative rounded-2xl border-2 border-black">
+                <Card className="relative z-0 rounded-[inherit] h-full shadow-none border-0">
                   <CardHeader className="flex items-center gap-3 pt-6">
                     <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">
                       {GradientIcon({ Icon: BookOpen, id: 'ias-lib' })}
@@ -70,9 +69,8 @@ export default function IASAcademyPage() {
                 </Card>
               </div>
 
-              <div className="relative rounded-2xl">
-                <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
-                <Card className="relative z-0 rounded-[inherit] h-full shadow-none">
+              <div className="relative rounded-2xl border-2 border-black">
+                <Card className="relative z-0 rounded-[inherit] h-full shadow-none border-0">
                   <CardHeader className="flex items-center gap-3 pt-6">
                     <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">
                       {GradientIcon({ Icon: Monitor, id: 'ias-smart' })}
@@ -87,9 +85,8 @@ export default function IASAcademyPage() {
                 </Card>
               </div>
 
-              <div className="relative rounded-2xl">
-                <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
-                <Card className="relative z-0 rounded-[inherit] h-full shadow-none">
+              <div className="relative rounded-2xl border-2 border-black">
+                <Card className="relative z-0 rounded-[inherit] h-full shadow-none border-0">
                   <CardHeader className="flex items-center gap-3 pt-6">
                     <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">
                       {GradientIcon({ Icon: Home, id: 'ias-hostel' })}
@@ -104,9 +101,8 @@ export default function IASAcademyPage() {
                 </Card>
               </div>
 
-              <div className="relative rounded-2xl">
-                <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
-                <Card className="relative z-0 rounded-[inherit] h-full shadow-none">
+              <div className="relative rounded-2xl border-2 border-black">
+                <Card className="relative z-0 rounded-[inherit] h-full shadow-none border-0">
                   <CardHeader className="flex items-center gap-3 pt-6">
                     <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">
                       {GradientIcon({ Icon: Wifi, id: 'ias-online' })}
@@ -183,9 +179,8 @@ export default function IASAcademyPage() {
             <p className="max-w-3xl mx-auto text-center text-gray-700 mb-10">Join Our Coaching Programs. Enroll now and start your journey toward success in Civil Services Exams!</p>
 
             <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-              <div className="relative rounded-2xl">
-                <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
-                <Card className="relative z-0 rounded-[inherit] h-full shadow-none">
+              <div className="relative rounded-2xl border-2 border-black">
+                <Card className="relative z-0 rounded-[inherit] h-full shadow-none border-0">
                   <CardHeader className="py-6">
                     <CardTitle className="text-gray-900">Assam Exclusive Batch (GS V)</CardTitle>
                     <CardDescription className="text-gray-600">APSC</CardDescription>
@@ -198,9 +193,8 @@ export default function IASAcademyPage() {
                 </Card>
               </div>
 
-              <div className="relative rounded-2xl">
-                <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
-                <Card className="relative z-0 rounded-[inherit] h-full shadow-none">
+              <div className="relative rounded-2xl border-2 border-black">
+                <Card className="relative z-0 rounded-[inherit] h-full shadow-none border-0">
                   <CardHeader className="py-6">
                     <CardTitle className="text-gray-900">IAS Advance Batch – GS (Mains)</CardTitle>
                     <CardDescription className="text-gray-600">UPSC / IAS</CardDescription>
@@ -213,9 +207,8 @@ export default function IASAcademyPage() {
                 </Card>
               </div>
 
-              <div className="relative rounded-2xl">
-                <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
-                <Card className="relative z-0 rounded-[inherit] h-full shadow-none">
+              <div className="relative rounded-2xl border-2 border-black">
+                <Card className="relative z-0 rounded-[inherit] h-full shadow-none border-0">
                   <CardHeader className="py-6">
                     <CardTitle className="text-gray-900">IAS Foundation Batch – GS (Prelims + Mains)</CardTitle>
                     <CardDescription className="text-gray-600">UPSC / IAS</CardDescription>
@@ -228,9 +221,8 @@ export default function IASAcademyPage() {
                 </Card>
               </div>
 
-              <div className="relative rounded-2xl">
-                <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
-                <Card className="relative z-0 rounded-[inherit] h-full shadow-none">
+              <div className="relative rounded-2xl border-2 border-black">
+                <Card className="relative z-0 rounded-[inherit] h-full shadow-none border-0">
                   <CardHeader className="py-6">
                     <CardTitle className="text-gray-900">IAS GS Mentorship Programme</CardTitle>
                     <CardDescription className="text-gray-600">UPSC / IAS</CardDescription>
@@ -243,9 +235,8 @@ export default function IASAcademyPage() {
                 </Card>
               </div>
 
-              <div className="relative rounded-2xl">
-                <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
-                <Card className="relative z-0 rounded-[inherit] h-full shadow-none">
+              <div className="relative rounded-2xl border-2 border-black">
+                <Card className="relative z-0 rounded-[inherit] h-full shadow-none border-0">
                   <CardHeader className="py-6">
                     <CardTitle className="text-gray-900">APSC Mains Crash Course</CardTitle>
                     <CardDescription className="text-gray-600">APSC</CardDescription>
@@ -258,9 +249,8 @@ export default function IASAcademyPage() {
                 </Card>
               </div>
 
-              <div className="relative rounded-2xl">
-                <ShineBorder className="rounded-[inherit] z-10 opacity-90" borderWidth={2} duration={16} shineColor={["#60A5FA", "#C084FC", "#60A5FA"]} />
-                <Card className="relative z-0 rounded-[inherit] h-full shadow-none">
+              <div className="relative rounded-2xl border-2 border-black">
+                <Card className="relative z-0 rounded-[inherit] h-full shadow-none border-0">
                   <CardHeader className="py-6">
                     <CardTitle className="text-gray-900">APSC Foundation Batch – GS</CardTitle>
                     <CardDescription className="text-gray-600">APSC</CardDescription>
