@@ -272,8 +272,8 @@ const NewsSection = () => {
               )}
             </div>
 
-            {/* Upcoming Events spans two rows */}
-            <div ref={eventsRef} className="lg:row-span-2 h-full" style={{ height: rightPanelHeight ? `${rightPanelHeight}px` : 'auto' }}>
+            {/* Upcoming Events spans two rows - Hidden on mobile and medium screens */}
+            <div ref={eventsRef} className="hidden lg:block lg:row-span-2 h-full" style={{ height: rightPanelHeight ? `${rightPanelHeight}px` : 'auto' }}>
               <Card className="border-2 border-gray-200 bg-white sticky top-8 rounded-xl h-full shadow-none">
                 <CardContent className="px-4 py-2 h-full flex flex-col">
                   <div className="flex items-center mb-3">

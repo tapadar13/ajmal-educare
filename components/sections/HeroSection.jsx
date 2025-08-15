@@ -16,12 +16,6 @@ const HeroSection = () => {
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-20 lg:pt-8 lg:pb-8 pb-8 sm:pb-0">
         {/* Main Hero Content */}
         <div className="text-center mb-10 px-2 sm:px-0">
-          {/* <Badge 
-            variant="outline"
-            className="mb-8 text-sm font-medium py-2 px-4 border-gray-300 text-gray-700 bg-white rounded-full shadow-sm"
-          >
-            ✨ Our Educational Ecosystem
-          </Badge> */}
           
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight tracking-tight px-2">
             Specialized{' '}
