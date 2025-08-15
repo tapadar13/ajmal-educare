@@ -19,12 +19,6 @@ const Header = () => {
       href: '/',
     },
     { name: 'About', href: '/about' },
-    { name: 'Leadership', href: '#leadership' },
-    { name: 'News', href: '#news' },
-    { 
-      name: 'Careers', 
-      href: '#careers',
-    },
     { name: 'Our Academies', href: '#academies',
       hasDropdown: true,
       dropdownItems: [
@@ -32,6 +26,8 @@ const Header = () => {
         { name: 'Ajmal IAS Academy', href: '/ias' }
       ]
      },
+    { name: 'News', href: '#news' },
+    { name: 'Careers', href: '#careers' },
   ]
 
   return (
