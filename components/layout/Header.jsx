@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 import { Menu, X, ChevronDown } from 'lucide-react'
 import AnimatedDropdown from '@/components/ui/animated-dropdown'
@@ -9,6 +10,7 @@ import AnimatedDropdown from '@/components/ui/animated-dropdown'
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isAcademiesOpen, setIsAcademiesOpen] = useState(false)
+  const router = useRouter()
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
   const toggleAcademies = () => setIsAcademiesOpen(!isAcademiesOpen)
@@ -65,7 +67,7 @@ const Header = () => {
                     {item.hasDropdown ? (
                       <AnimatedDropdown 
                         onItemClick={(academy) => {
-                          window.location.href = academy.href;
+                          router.push(academy.href);
                         }}
                       />
                     ) : (
