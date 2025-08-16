@@ -261,7 +261,7 @@ const NewsSection = () => {
                             {newsItems[0].description}
                           </p>
                         </div>
-                        <p className="flex items-center justify-betweentext-blue-500 p-0 h-auto font-semibold group self-start">
+                        <p className="flex items-center justify-between text-blue-500 p-0 h-auto font-semibold group self-start">
                           Read More
                           <ArrowRight className="w-4 h-4 ml-2" />
                         </p>

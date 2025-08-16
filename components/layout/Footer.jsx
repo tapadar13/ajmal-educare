@@ -4,7 +4,7 @@ import { MapPin, Phone, Mail, ArrowRight } from 'lucide-react'
 
 const Footer = () => {
   const quickLinks = [
-    { name: 'About Us', href: '#about' },
+    { name: 'About Us', href: '/about' },
     { name: 'Our Academies', href: '#academies' },
     { name: 'Testimonials', href: '#testimonials' },
     { name: 'Contact', href: '/contact' }
