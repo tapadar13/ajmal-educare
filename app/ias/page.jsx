@@ -49,7 +49,7 @@ export default function IASAcademyPage() {
         </section>
 
         {/* Facilities */}
-        <section className="py-12 lg:py-16 bg-white">
+        <section className="py-12 lg:py-12 bg-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-10">Our Facilities</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -121,7 +121,7 @@ export default function IASAcademyPage() {
         </section>
 
         {/* Programs */}
-        <section className="py-12 lg:py-16 bg-gray-50">
+        <section className="py-12 lg:py-12 bg-gray-50">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-10">Our Programs</h2>
             <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
@@ -173,7 +173,7 @@ export default function IASAcademyPage() {
         </section>
 
         {/* Courses */}
-        <section className="py-12 lg:py-16 bg-white">
+        <section className="py-12 lg:py-12 bg-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-4">Courses</h2>
             <p className="max-w-3xl mx-auto text-center text-gray-700 mb-10">Join Our Coaching Programs. Enroll now and start your journey toward success in Civil Services Exams!</p>

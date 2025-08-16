@@ -73,7 +73,7 @@ export default function Super40Page() {
         </section>
 
         {/* Why Stands Out */}
-        <section className="py-12 lg:py-16 bg-white">
+        <section className="py-12 lg:py-12 bg-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-10">
               Why <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Ajmal Super40</span> Stands Out
@@ -168,7 +168,7 @@ export default function Super40Page() {
         </section>
 
         {/* Performers gallery */}
-        <section className="py-12 lg:py-16 bg-yellow-200/60">
+        <section className="py-12 lg:py-12 bg-yellow-200/60">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-10">
               Our <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Outstanding Performers</span> in NEET &amp; JEE
@@ -188,7 +188,7 @@ export default function Super40Page() {
         </section>
 
         {/* Courses */}
-        <section className="py-12 lg:py-16 bg-white">
+        <section className="py-12 lg:py-12 bg-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-6">Our <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Popular</span> Courses</h2>
             <p className="max-w-4xl mx-auto text-center text-gray-700 mb-10">

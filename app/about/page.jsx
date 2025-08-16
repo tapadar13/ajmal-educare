@@ -31,7 +31,7 @@ export default function AboutPage() {
             <div className="absolute -top-24 -left-24 w-80 h-80 bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-full blur-3xl" />
             <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-gradient-to-br from-emerald-400/20 to-cyan-400/20 rounded-full blur-3xl" />
           </div>
-          <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
+          <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-16">
             <div className="text-center max-w-5xl mx-auto">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-gray-900 mb-6">
                 Ajmal Educare India Private Limited
@@ -47,7 +47,7 @@ export default function AboutPage() {
         </section>
 
         {/* Intro and Ventures */}
-        <section className="py-16 lg:py-20 bg-white">
+        <section className="py-16 lg:py-16 bg-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 gap-10 lg:gap-16 items-start">
               <div className="space-y-6">
@@ -75,7 +75,7 @@ export default function AboutPage() {
         </section>
 
         {/* What Sets Us Apart */}
-        <section className="py-16 lg:py-20 bg-gradient-to-b from-gray-50 to-white">
+        <section className="py-16 lg:py-16 bg-gradient-to-b from-gray-50 to-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-4xl sm:text-5xl font-black text-gray-900 tracking-tight">
@@ -166,7 +166,7 @@ export default function AboutPage() {
         </section>
 
         {/* Foundational Pillars */}
-        <section className="py-16 lg:py-20 bg-white">
+        <section className="py-16 lg:py-16 bg-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h3 className="text-4xl sm:text-5xl font-black text-gray-900 tracking-tight">
