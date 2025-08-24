@@ -82,7 +82,7 @@ export default function AboutPage() {
                 What <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Sets Us Apart</span>
               </h2>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
               <div className="relative rounded-2xl border-2 border-black">
                 <Card className="rounded-[inherit] shadow-none gap-2 border-0">
                 <CardHeader className="pt-6">
@@ -128,38 +128,34 @@ export default function AboutPage() {
                 </Card>
               </div>
 
-              
+              <div className="relative rounded-2xl border-2 border-black">
+                <Card className="rounded-[inherit] shadow-none gap-2 border-0">
+                  <CardHeader className="pt-6">
+                    <CardTitle className="flex items-center gap-3 text-xl">
+                      <Heart className="w-5 h-5 text-gray-700" /> Holistic Development
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="pb-6">
+                    <CardDescription className="text-base">
+                      We cultivate strong character and leadership through mock interviews, current-affairs training, and personality-building sessions.
+                    </CardDescription>
+                  </CardContent>
+                </Card>
+              </div>
 
-              {/* Center bottom two cards */}
-              <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                <div className="relative rounded-2xl border-2 border-black">
-                  <Card className="rounded-[inherit] shadow-none gap-2 border-0">
-                    <CardHeader className="pt-6">
-                      <CardTitle className="flex items-center gap-3 text-xl">
-                        <Heart className="w-5 h-5 text-gray-700" /> Holistic Development
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent className="pb-6">
-                      <CardDescription className="text-base">
-                        We cultivate strong character and leadership through mock interviews, current-affairs training, and personality-building sessions.
-                      </CardDescription>
-                    </CardContent>
-                  </Card>
-                </div>
-                <div className="relative rounded-2xl border-2 border-black">
-                  <Card className="rounded-[inherit] shadow-none gap-2 border-0">
-                    <CardHeader className="pt-6">
-                      <CardTitle className="flex items-center gap-3 text-xl">
-                        <MessageSquare className="w-5 h-5 text-gray-700" /> Focus on Rural Talent
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent className="pb-6">
-                      <CardDescription className="text-base">
-                        Most of our students come from rural and economically weaker backgrounds and we work tirelessly to remove every barrier.
-                      </CardDescription>
-                    </CardContent>
-                  </Card>
-                </div>
+              <div className="relative rounded-2xl border-2 border-black md:col-span-2 md:max-w-md md:mx-auto">
+                <Card className="rounded-[inherit] shadow-none gap-2 border-0">
+                  <CardHeader className="pt-6">
+                    <CardTitle className="flex items-center gap-3 text-xl">
+                      <MessageSquare className="w-5 h-5 text-gray-700" /> Focus on Rural Talent
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="pb-6">
+                    <CardDescription className="text-base">
+                      Most of our students come from rural and economically weaker backgrounds and we work tirelessly to remove every barrier.
+                    </CardDescription>
+                  </CardContent>
+                </Card>
               </div>
             </div>
           </div>
@@ -173,7 +169,7 @@ export default function AboutPage() {
                 Our <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Foundational Pillars</span>
               </h3>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
               <div className="relative rounded-2xl border-2 border-black">
                 <Card className="rounded-[inherit] shadow-none gap-2 border-0">
                 <CardHeader className="pt-6">
@@ -207,28 +203,26 @@ export default function AboutPage() {
                 </Card>
               </div>
 
-              {/* Center bottom two cards */}
-              <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                <div className="relative rounded-2xl border-2 border-black">
-                  <Card className="rounded-[inherit] shadow-none gap-2 border-0">
-                    <CardHeader className="pt-6">
-                      <CardTitle className="text-xl">Beyond Exams</CardTitle>
-                    </CardHeader>
-                    <CardContent className="pb-6">
-                      <CardDescription className="text-base">Coaching for confidence, interview skills, leadership, and ethical growth.</CardDescription>
-                    </CardContent>
-                  </Card>
-                </div>
-                <div className="relative rounded-2xl border-2 border-black">
-                  <Card className="rounded-[inherit] shadow-none gap-2 border-0">
-                    <CardHeader className="pt-6">
-                      <CardTitle className="text-xl">Community Impact</CardTitle>
-                    </CardHeader>
-                    <CardContent className="pb-6">
-                      <CardDescription className="text-base">Each success story uplifts entire communities, reinforcing education as a powerful social equalizer.</CardDescription>
-                    </CardContent>
-                  </Card>
-                </div>
+              <div className="relative rounded-2xl border-2 border-black">
+                <Card className="rounded-[inherit] shadow-none gap-2 border-0">
+                  <CardHeader className="pt-6">
+                    <CardTitle className="text-xl">Beyond Exams</CardTitle>
+                  </CardHeader>
+                  <CardContent className="pb-6">
+                    <CardDescription className="text-base">Coaching for confidence, interview skills, leadership, and ethical growth.</CardDescription>
+                  </CardContent>
+                </Card>
+              </div>
+
+              <div className="relative rounded-2xl border-2 border-black md:col-span-2 md:max-w-md md:mx-auto">
+                <Card className="rounded-[inherit] shadow-none gap-2 border-0">
+                  <CardHeader className="pt-6">
+                    <CardTitle className="text-xl">Community Impact</CardTitle>
+                  </CardHeader>
+                  <CardContent className="pb-6">
+                    <CardDescription className="text-base">Each success story uplifts entire communities, reinforcing education as a powerful social equalizer.</CardDescription>
+                  </CardContent>
+                </Card>
               </div>
             </div>
           </div>

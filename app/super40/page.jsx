@@ -78,8 +78,8 @@ export default function Super40Page() {
             <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-10">
               Why <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Ajmal Super40</span> Stands Out
             </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-6">
-              <div className="relative rounded-2xl lg:col-span-2 border-2 border-black">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              <div className="relative rounded-2xl border-2 border-black">
                 <Card className="relative z-0 rounded-[inherit] h-full shadow-none border-0">
                   <CardHeader className="flex items-center gap-3 pt-6">
                     <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">
@@ -96,7 +96,7 @@ export default function Super40Page() {
                 </Card>
               </div>
 
-              <div className="relative rounded-2xl lg:col-span-2 border-2 border-black">
+              <div className="relative rounded-2xl border-2 border-black">
                 <Card className="relative z-0 rounded-[inherit] h-full shadow-none border-0">
                   <CardHeader className="flex items-center gap-3 pt-6">
                     <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">
@@ -113,7 +113,7 @@ export default function Super40Page() {
                 </Card>
               </div>
 
-                            <div className="relative rounded-2xl lg:col-span-2 border-2 border-black">
+              <div className="relative rounded-2xl border-2 border-black">
                 <Card className="relative z-0 rounded-[inherit] h-full shadow-none border-0">
                   <CardHeader className="flex items-center gap-3 pt-6">
                     <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">
@@ -130,7 +130,7 @@ export default function Super40Page() {
                 </Card>
               </div>
 
-                            <div className="relative rounded-2xl lg:col-span-2 lg:col-start-2 border-2 border-black">
+              <div className="relative rounded-2xl border-2 border-black">
                 <Card className="relative z-0 rounded-[inherit] h-full shadow-none border-0">
                   <CardHeader className="flex items-center gap-3 pt-6">
                     <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">
@@ -147,7 +147,7 @@ export default function Super40Page() {
                 </Card>
               </div>
 
-                            <div className="relative rounded-2xl lg:col-span-2 border-2 border-black">
+              <div className="relative rounded-2xl border-2 border-black md:col-span-2 md:max-w-md md:mx-auto">
                 <Card className="relative z-0 rounded-[inherit] h-full shadow-none border-0">
                   <CardHeader className="flex items-center gap-3 pt-6">
                     <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">

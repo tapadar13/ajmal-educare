@@ -52,7 +52,7 @@ export default function IASAcademyPage() {
         <section className="py-12 lg:py-12 bg-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-10">Our Facilities</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
               <div className="relative rounded-2xl border-2 border-black">
                 <Card className="relative z-0 rounded-[inherit] h-full shadow-none border-0">
                   <CardHeader className="flex items-center gap-3 pt-6">
