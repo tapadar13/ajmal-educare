@@ -109,7 +109,7 @@ export default function AnimatedDropdown({ onItemClick }) {
         <button
           onClick={() => setIsOpen(!isOpen)}
           className={cn(
-            "flex items-center space-x-1 text-gray-700 hover:text-gray-900 transition-all duration-200 font-medium text-sm",
+            "flex items-center space-x-1 text-gray-700 hover:text-gray-900 transition-all duration-200 font-medium text-sm cursor-pointer",
             "focus:outline-none rounded-md px-2 py-1",
             isOpen && "text-gray-900",
           )}
