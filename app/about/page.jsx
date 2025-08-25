@@ -18,7 +18,7 @@ import {
   ClipboardList,
 } from "lucide-react";
 
-function GradientIcon({ Icon, id }) {
+function GradientIcon({ Icon }) {
   return <Icon className="w-5 h-5 text-white" />;
 }
 
