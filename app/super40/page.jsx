@@ -5,9 +5,8 @@ import Footer from '@/components/layout/Footer'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import Image from 'next/image'
 import { Award, MessageSquare, BookOpen, Heart, ClipboardList } from 'lucide-react'
-import { ShineBorder } from '@/components/magicui/shine-border'
 
-function GradientIcon({ Icon, id }) {
+function GradientIcon({ Icon }) {
   return (
     <Icon className="w-5 h-5 text-white" />
   );
