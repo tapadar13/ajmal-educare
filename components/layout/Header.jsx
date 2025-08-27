@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
+import { useUser, SignInButton } from '@clerk/nextjs'
 
 import { Menu, X, ChevronDown } from 'lucide-react'
 import AnimatedDropdown from '@/components/ui/animated-dropdown'
@@ -11,9 +12,25 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isAcademiesOpen, setIsAcademiesOpen] = useState(false)
   const router = useRouter()
+  const { user, isSignedIn } = useUser()
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
   const toggleAcademies = () => setIsAcademiesOpen(!isAcademiesOpen)
+
+  const handleNavClick = (item) => {
+    if (item.requiresAuth && !isSignedIn) {
+      router.push('/sign-in')
+    } else {
+      router.push(item.href)
+    }
+  }
+
+  const getUserInitials = () => {
+    if (!user) return 'U'
+    const firstName = user.firstName || ''
+    const lastName = user.lastName || ''
+    return (firstName.charAt(0) + lastName.charAt(0)).toUpperCase() || user.emailAddresses[0]?.emailAddress?.charAt(0).toUpperCase() || 'U'
+  }
 
   const navItems = [
     { 
@@ -30,6 +47,7 @@ const Header = () => {
      },
     { name: 'News', href: '#news' },
     { name: 'Careers', href: '#careers' },
+    { name: 'Payment', href: '/payments', requiresAuth: true },
   ]
 
   return (
@@ -70,6 +88,13 @@ const Header = () => {
                           router.push(academy.href);
                         }}
                       />
+                    ) : item.requiresAuth ? (
+                      <button
+                        onClick={() => handleNavClick(item)}
+                        className="text-gray-700 hover:text-gray-900 transition-colors duration-200 font-medium text-sm cursor-pointer"
+                      >
+                        {item.name}
+                      </button>
                     ) : (
                       <Link
                         href={item.href}
@@ -84,16 +109,22 @@ const Header = () => {
             </nav>
           </div>
 
-          {/* Contact Us Button - Right Side */}
-          <div className="hidden lg:flex flex-shrink-0">
-            <Link
-              href="/contact"
-              className="group relative isolate inline-flex items-center justify-center overflow-hidden text-left font-medium transition duration-300 ease-[cubic-bezier(0.4,0.36,0,1)] before:duration-300 before:ease-[cubic-bezier(0.4,0.36,0,1)] before:transtion-opacity rounded-md shadow-[0_1px_theme(colors.white/0.07)_inset,0_1px_3px_theme(colors.gray.900/0.2)] before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:rounded-md before:bg-gradient-to-b before:from-white/20 before:opacity-50 hover:before:opacity-100 after:pointer-events-none after:absolute after:inset-0 after:-z-10 after:rounded-md after:bg-gradient-to-b after:from-white/10 after:from-[46%] after:to-[54%] after:mix-blend-overlay text-sm h-[1.875rem] px-3 ring-1 bg-gray-900 text-white ring-gray-900"
-            >
-              Contact Us
-              <svg viewBox="0 0 10 10" aria-hidden="true" className="ml-2 h-2.5 w-2.5 flex-none opacity-60 group-hover:translate-x-6 group-hover:opacity-0 transition duration-300 ease-[cubic-bezier(0.4,0.36,0,1)] before:duration-300 before:ease-[cubic-bezier(0.4,0.36,0,1)] before:transtion-opacity"><path fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m7.25 5-3.5-2.25v4.5L7.25 5Z"></path></svg>
-              <svg viewBox="0 0 10 10" aria-hidden="true" className="-ml-2.5 h-2.5 w-2.5 flex-none -translate-x-2 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition duration-300 ease-[cubic-bezier(0.4,0.36,0,1)] before:duration-300 before:ease-[cubic-bezier(0.4,0.36,0,1)] before:transtion-opacity"><path fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m7.25 5-3.5-2.25v4.5L7.25 5Z"></path></svg>
-            </Link>
+          {/* Right Side - User or Contact Us */}
+          <div className="hidden lg:flex flex-shrink-0 items-center space-x-4">
+            {isSignedIn ? (
+              <div className="flex items-center justify-center w-8 h-8 bg-gray-900 text-white rounded-full font-medium text-sm">
+                {getUserInitials()}
+              </div>
+            ) : (
+              <Link
+                href="/contact"
+                className="group relative isolate inline-flex items-center justify-center overflow-hidden text-left font-medium transition duration-300 ease-[cubic-bezier(0.4,0.36,0,1)] before:duration-300 before:ease-[cubic-bezier(0.4,0.36,0,1)] before:transtion-opacity rounded-md shadow-[0_1px_theme(colors.white/0.07)_inset,0_1px_3px_theme(colors.gray.900/0.2)] before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:rounded-md before:bg-gradient-to-b before:from-white/20 before:opacity-50 hover:before:opacity-100 after:pointer-events-none after:absolute after:inset-0 after:-z-10 after:rounded-md after:bg-gradient-to-b after:from-white/10 after:from-[46%] after:to-[54%] after:mix-blend-overlay text-sm h-[1.875rem] px-3 ring-1 bg-gray-900 text-white ring-gray-900"
+              >
+                Contact Us
+                <svg viewBox="0 0 10 10" aria-hidden="true" className="ml-2 h-2.5 w-2.5 flex-none opacity-60 group-hover:translate-x-6 group-hover:opacity-0 transition duration-300 ease-[cubic-bezier(0.4,0.36,0,1)] before:duration-300 before:ease-[cubic-bezier(0.4,0.36,0,1)] before:transtion-opacity"><path fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m7.25 5-3.5-2.25v4.5L7.25 5Z"></path></svg>
+                <svg viewBox="0 0 10 10" aria-hidden="true" className="-ml-2.5 h-2.5 w-2.5 flex-none -translate-x-2 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition duration-300 ease-[cubic-bezier(0.4,0.36,0,1)] before:duration-300 before:ease-[cubic-bezier(0.4,0.36,0,1)] before:transtion-opacity"><path fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m7.25 5-3.5-2.25v4.5L7.25 5Z"></path></svg>
+              </Link>
+            )}
           </div>
 
           {/* Mobile menu button */}
@@ -142,6 +173,16 @@ const Header = () => {
                         </div>
                       )}
                     </div>
+                  ) : item.requiresAuth ? (
+                    <button
+                      onClick={() => {
+                        handleNavClick(item);
+                        setIsMenuOpen(false);
+                      }}
+                      className="block text-gray-800 hover:text-primary transition-colors duration-300 font-semibold text-lg py-2 w-full text-left"
+                    >
+                      {item.name}
+                    </button>
                   ) : (
                     <Link
                       href={item.href}
@@ -153,13 +194,16 @@ const Header = () => {
                   )}
                 </div>
               ))}
-              <a
-                href="#signin"
-                className="block text-gray-800 hover:text-primary transition-colors duration-300 font-semibold text-lg py-2"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Sign in
-              </a>
+              {isSignedIn && (
+                <div className="flex items-center space-x-3 py-2">
+                  <div className="flex items-center justify-center w-8 h-8 bg-gray-900 text-white rounded-full font-medium text-sm">
+                    {getUserInitials()}
+                  </div>
+                  <span className="text-gray-600 text-sm">
+                    {user?.firstName} {user?.lastName}
+                  </span>
+                </div>
+              )}
               <Link
                 href="/contact"
                 className="group relative isolate inline-flex items-center justify-center overflow-hidden text-left font-medium transition duration-300 ease-[cubic-bezier(0.4,0.36,0,1)] before:duration-300 before:ease-[cubic-bezier(0.4,0.36,0,1)] before:transtion-opacity rounded-md shadow-[0_1px_theme(colors.white/0.07)_inset,0_1px_3px_theme(colors.gray.900/0.2)] before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:rounded-md before:bg-gradient-to-b before:from-white/20 before:opacity-50 hover:before:opacity-100 after:pointer-events-none after:absolute after:inset-0 after:-z-10 after:rounded-md after:bg-gradient-to-b after:from-white/10 after:from-[46%] after:to-[54%] after:mix-blend-overlay text-sm h-[1.875rem] px-3 ring-1 bg-gray-900 text-white ring-gray-900 w-full mt-6"
