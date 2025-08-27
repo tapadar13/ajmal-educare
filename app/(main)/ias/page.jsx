@@ -4,6 +4,7 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { BookOpen, CalendarCheck2, GraduationCap, Clock, Monitor, Home, Globe } from 'lucide-react'
+import Image from 'next/image'
 
 function GradientIcon({ Icon }) {
   return (
@@ -134,18 +135,22 @@ export default function IASAcademyPage() {
             <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
               <div className="relative rounded-2xl border-2 border-black overflow-hidden">
                 <Card className="relative z-0 rounded-none h-full shadow-none border-0">
-                  <CardHeader className="flex flex-row items-center gap-3 pt-6 pb-6 bg-gradient-to-r from-blue-600 to-purple-600">
-                    <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center">
-                      {GradientIcon({ Icon: CalendarCheck2, id: 'course-calendar' })}
-                    </div>
-                    <div>
-                      <CardTitle className="text-white">Assam Exclusive Batch (GS V)</CardTitle>
-                      <CardDescription className="text-white/90 text-sm">APSC</CardDescription>
+                  <CardHeader className="relative flex flex-col items-center justify-center pt-12 pb-12 text-center min-h-[240px] overflow-hidden">
+                    <Image 
+                      src="/images/programs/1.webp" 
+                      alt="Program background" 
+                      fill 
+                      className="object-cover object-center"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r from-red-600/80 to-orange-500/80"></div>
+                    <div className="relative z-10">
+                      <CardTitle className="text-white text-2xl font-bold mb-2 drop-shadow-2xl">Assam Exclusive Batch (GS V)</CardTitle>
+                      <CardDescription className="text-white text-lg drop-shadow-2xl font-semibold">APSC</CardDescription>
                     </div>
                   </CardHeader>
                   <CardContent className="pb-6">
                     <CardDescription className="text-gray-600 text-lg">
-                      Prepare with precision for APSC Mains GS Paper V with our Assam Exclusive Batch, focused on Assam-specific topics and state-related knowledge. This course is specially designed for GS Paper V of the APSC Mains exam and covers Assam’s history, geography, polity, economy, society, and current affairs. Get in-depth guidance from subject experts, practice answer writing, and improve your score with targeted preparation.
+                      Prepare with precision for APSC Mains GS Paper V with our Assam Exclusive Batch, focused on Assam-specific topics and state-related knowledge. This course is specially designed for GS Paper V of the APSC Mains exam and covers Assam's history, geography, polity, economy, society, and current affairs. Get in-depth guidance from subject experts, practice answer writing, and improve your score with targeted preparation.
                     </CardDescription>
                   </CardContent>
                 </Card>
@@ -153,13 +158,17 @@ export default function IASAcademyPage() {
 
               <div className="relative rounded-2xl border-2 border-black overflow-hidden">
                 <Card className="relative z-0 rounded-none h-full shadow-none border-0">
-                  <CardHeader className="flex flex-row items-center gap-3 pt-6 pb-6 bg-gradient-to-r from-blue-600 to-purple-600">
-                    <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center">
-                      {GradientIcon({ Icon: GraduationCap, id: 'course-advance' })}
-                    </div>
-                    <div>
-                      <CardTitle className="text-white">IAS Advance Batch – GS (Mains)</CardTitle>
-                      <CardDescription className="text-white/90 text-sm">UPSC / IAS</CardDescription>
+                  <CardHeader className="relative flex flex-col items-center justify-center pt-12 pb-12 text-center min-h-[240px] overflow-hidden">
+                    <Image 
+                      src="/images/programs/1.webp" 
+                      alt="Program background" 
+                      fill 
+                      className="object-cover object-center"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r from-red-600/80 to-orange-500/80"></div>
+                    <div className="relative z-10">
+                      <CardTitle className="text-white text-2xl font-bold mb-2 drop-shadow-2xl">IAS Advance Batch – GS (Mains)</CardTitle>
+                      <CardDescription className="text-white text-lg drop-shadow-2xl font-semibold">UPSC / IAS</CardDescription>
                     </div>
                   </CardHeader>
                   <CardContent className="pb-6">
@@ -172,13 +181,17 @@ export default function IASAcademyPage() {
 
               <div className="relative rounded-2xl border-2 border-black overflow-hidden">
                 <Card className="relative z-0 rounded-none h-full shadow-none border-0">
-                  <CardHeader className="flex flex-row items-center gap-3 pt-6 pb-6 bg-gradient-to-r from-blue-600 to-purple-600">
-                    <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center">
-                      {GradientIcon({ Icon: BookOpen, id: 'course-foundation' })}
-                    </div>
-                    <div>
-                      <CardTitle className="text-white">IAS Foundation Batch – GS (Prelims + Mains)</CardTitle>
-                      <CardDescription className="text-white/90 text-sm">UPSC / IAS</CardDescription>
+                  <CardHeader className="relative flex flex-col items-center justify-center pt-12 pb-12 text-center min-h-[240px] overflow-hidden">
+                    <Image 
+                      src="/images/programs/2.jpg" 
+                      alt="Program background" 
+                      fill 
+                      className="object-cover object-center"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r from-red-700/85 to-red-500/85"></div>
+                    <div className="relative z-10">
+                      <CardTitle className="text-white text-2xl font-bold mb-2 drop-shadow-2xl">IAS Foundation Batch – GS (Prelims + Mains)</CardTitle>
+                      <CardDescription className="text-white text-lg drop-shadow-2xl font-semibold">UPSC / IAS</CardDescription>
                     </div>
                   </CardHeader>
                   <CardContent className="pb-6">
@@ -191,13 +204,17 @@ export default function IASAcademyPage() {
 
               <div className="relative rounded-2xl border-2 border-black overflow-hidden">
                 <Card className="relative z-0 rounded-none h-full shadow-none border-0">
-                  <CardHeader className="flex flex-row items-center gap-3 pt-6 pb-6 bg-gradient-to-r from-blue-600 to-purple-600">
-                    <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center">
-                      {GradientIcon({ Icon: GraduationCap, id: 'course-mentorship' })}
-                    </div>
-                    <div>
-                      <CardTitle className="text-white">IAS GS Mentorship Programme</CardTitle>
-                      <CardDescription className="text-white/90 text-sm">UPSC / IAS</CardDescription>
+                  <CardHeader className="relative flex flex-col items-center justify-center pt-12 pb-12 text-center min-h-[240px] overflow-hidden">
+                    <Image 
+                      src="/images/programs/2.jpg" 
+                      alt="Program background" 
+                      fill 
+                      className="object-cover object-center"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r from-red-700/85 to-red-500/85"></div>
+                    <div className="relative z-10">
+                      <CardTitle className="text-white text-2xl font-bold mb-2 drop-shadow-2xl">IAS GS Mentorship Programme</CardTitle>
+                      <CardDescription className="text-white text-lg drop-shadow-2xl font-semibold">UPSC / IAS</CardDescription>
                     </div>
                   </CardHeader>
                   <CardContent className="pb-6">
@@ -210,13 +227,17 @@ export default function IASAcademyPage() {
 
               <div className="relative rounded-2xl border-2 border-black overflow-hidden">
                 <Card className="relative z-0 rounded-none h-full shadow-none border-0">
-                  <CardHeader className="flex flex-row items-center gap-3 pt-6 pb-6 bg-gradient-to-r from-blue-600 to-purple-600">
-                    <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center">
-                      {GradientIcon({ Icon: CalendarCheck2, id: 'course-crash' })}
-                    </div>
-                    <div>
-                      <CardTitle className="text-white">APSC Mains Crash Course</CardTitle>
-                      <CardDescription className="text-white/90 text-sm">APSC</CardDescription>
+                  <CardHeader className="relative flex flex-col items-center justify-center pt-12 pb-12 text-center min-h-[240px] overflow-hidden">
+                    <Image 
+                      src="/images/programs/3.jpeg" 
+                      alt="Program background" 
+                      fill 
+                      className="object-cover object-center"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r from-red-800/85 to-orange-600/85"></div>
+                    <div className="relative z-10">
+                      <CardTitle className="text-white text-2xl font-bold mb-2 drop-shadow-2xl">APSC Mains Crash Course</CardTitle>
+                      <CardDescription className="text-white text-lg drop-shadow-2xl font-semibold">APSC</CardDescription>
                     </div>
                   </CardHeader>
                   <CardContent className="pb-6">
@@ -229,13 +250,17 @@ export default function IASAcademyPage() {
 
               <div className="relative rounded-2xl border-2 border-black overflow-hidden">
                 <Card className="relative z-0 rounded-none h-full shadow-none border-0">
-                  <CardHeader className="flex flex-row items-center gap-3 pt-6 pb-6 bg-gradient-to-r from-blue-600 to-purple-600">
-                    <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center">
-                      {GradientIcon({ Icon: BookOpen, id: 'course-apsc-foundation' })}
-                    </div>
-                    <div>
-                      <CardTitle className="text-white">APSC Foundation Batch – GS</CardTitle>
-                      <CardDescription className="text-white/90 text-sm">APSC</CardDescription>
+                  <CardHeader className="relative flex flex-col items-center justify-center pt-12 pb-12 text-center min-h-[240px] overflow-hidden">
+                    <Image 
+                      src="/images/programs/3.jpeg" 
+                      alt="Program background" 
+                      fill 
+                      className="object-cover object-center"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r from-red-800/85 to-orange-600/85"></div>
+                    <div className="relative z-10">
+                      <CardTitle className="text-white text-2xl font-bold mb-2 drop-shadow-2xl">APSC Foundation Batch – GS</CardTitle>
+                      <CardDescription className="text-white text-lg drop-shadow-2xl font-semibold">APSC</CardDescription>
                     </div>
                   </CardHeader>
                   <CardContent className="pb-6">
