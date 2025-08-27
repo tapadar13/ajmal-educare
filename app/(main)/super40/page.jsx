@@ -195,20 +195,34 @@ export default function Super40Page() {
             </p>
 
             <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-              <div className="relative rounded-2xl border-2 border-black">
-                <Card className="relative z-0 rounded-[inherit] h-full shadow-none border-0">
-                  <CardHeader className="py-6">
-                    <CardTitle className="text-gray-900">Test Series</CardTitle>
-                    <CardDescription className="text-gray-600">Test series</CardDescription>
+              <div className="relative rounded-2xl border-2 border-black overflow-hidden">
+                <Card className="relative z-0 rounded-none h-full shadow-none border-0">
+                  <CardHeader className="flex flex-row items-center gap-3 pt-6 pb-6 bg-gradient-to-r from-blue-600 to-purple-600">
+                    <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center">
+                      {GradientIcon({ Icon: ClipboardList })}
+                    </div>
+                    <CardTitle className="text-white">Test Series</CardTitle>
                   </CardHeader>
+                  <CardContent className="pb-6">
+                    <CardDescription className="text-gray-600 text-lg">
+                      Comprehensive test series designed to simulate real NEET and JEE exam conditions, helping students assess their preparation level and improve performance through detailed analysis and feedback.
+                    </CardDescription>
+                  </CardContent>
                 </Card>
               </div>
-              <div className="relative rounded-2xl border-2 border-black">
-                <Card className="relative z-0 rounded-[inherit] h-full shadow-none border-0">
-                  <CardHeader className="py-6">
-                    <CardTitle className="text-gray-900">One Year Integrated Course</CardTitle>
-                    <CardDescription className="text-gray-600">For students who have passed class XII</CardDescription>
+              <div className="relative rounded-2xl border-2 border-black overflow-hidden">
+                <Card className="relative z-0 rounded-none h-full shadow-none border-0">
+                  <CardHeader className="flex flex-row items-center gap-3 pt-6 pb-6 bg-gradient-to-r from-blue-600 to-purple-600">
+                    <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center">
+                      {GradientIcon({ Icon: BookOpen })}
+                    </div>
+                    <CardTitle className="text-white">One Year Integrated Course</CardTitle>
                   </CardHeader>
+                  <CardContent className="pb-6">
+                    <CardDescription className="text-gray-600 text-lg">
+                      Intensive one-year program for students who have passed class XII, providing comprehensive preparation for NEET and JEE with expert faculty guidance and structured curriculum.
+                    </CardDescription>
+                  </CardContent>
                 </Card>
               </div>
             </div>
