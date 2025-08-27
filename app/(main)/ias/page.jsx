@@ -40,7 +40,7 @@ export default function IASAcademyPage() {
             
             {/* Gradient Underline */}
             <div className="flex justify-center mt-8">
-              <div className="w-32 h-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"></div>
+              <div className="w-48 h-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"></div>
             </div>
           </div>
         </section>

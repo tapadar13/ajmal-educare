@@ -25,9 +25,9 @@ export default function Super40Page() {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
                 Ajmal <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Super 40</span>
               </h1>
-              <p className="text-2xl sm:text-xl text-gray-700 font-bold">
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
                 Premier coaching institute for NEET and JEE in Assam and Northeast India
-              </p>
+              </h2>
             </div>
 
             {/* Narrative */}
@@ -60,6 +60,11 @@ export default function Super40Page() {
                 competitive exams like NEET and JEE. By aligning our curriculum with the school syllabus and
                 competitive exam requirements, we provide a holistic education that enhances students' potential.
               </p>
+            </div>
+            
+            {/* Gradient Underline */}
+            <div className="flex justify-center mt-8">
+              <div className="w-48 h-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"></div>
             </div>
           </div>
         </section>
@@ -183,7 +188,7 @@ export default function Super40Page() {
         <section className="py-12 lg:py-12 bg-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-6">Our <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Popular</span> Courses</h2>
-            <p className="max-w-4xl mx-auto text-center text-gray-700 mb-10">
+            <p className="max-w-4xl text-xl mx-auto text-center text-gray-700 mb-10">
               Our popular courses are Five Year Integrated Course from class VIII to XII, Four Year Integrated
               Course from class IX to XII for students, Two year Integrated Course from class XI to XII &amp; One Year
               Integrated Course for students who have passed class XII.

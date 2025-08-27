@@ -38,7 +38,7 @@ export default function AboutPage() {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-gray-900 mb-6">
                 Ajmal Educare India Private Limited
               </h1>
-              <p className="text-2xl font-bold sm:text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
                 Excellence in education for aspiring students across North-East
                 India.
               </p>
