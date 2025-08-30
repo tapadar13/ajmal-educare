@@ -58,7 +58,7 @@ export default function IASAcademyPage() {
                       {GradientIcon({ Icon: Clock, id: 'facility-library' })}
                     </div>
                     <div>
-                      <CardTitle className="text-white">24×7 Library Access</CardTitle>
+                      <CardTitle className="text-white text-2xl font-bold">24×7 Library Access</CardTitle>
                     </div>
                   </CardHeader>
                   <CardContent className="pb-6">
@@ -76,7 +76,7 @@ export default function IASAcademyPage() {
                       {GradientIcon({ Icon: Monitor, id: 'facility-classroom' })}
                     </div>
                     <div>
-                      <CardTitle className="text-white">Digital Smart Classrooms</CardTitle>
+                      <CardTitle className="text-white text-2xl font-bold">Digital Smart Classrooms</CardTitle>
                     </div>
                   </CardHeader>
                   <CardContent className="pb-6">
@@ -94,7 +94,7 @@ export default function IASAcademyPage() {
                       {GradientIcon({ Icon: Home, id: 'facility-hostel' })}
                     </div>
                     <div>
-                      <CardTitle className="text-white">Hostel Facility</CardTitle>
+                      <CardTitle className="text-white text-2xl font-bold">Hostel Facility</CardTitle>
                     </div>
                   </CardHeader>
                   <CardContent className="pb-6">
@@ -112,7 +112,7 @@ export default function IASAcademyPage() {
                       {GradientIcon({ Icon: Globe, id: 'facility-online' })}
                     </div>
                     <div>
-                      <CardTitle className="text-white">Online Courses</CardTitle>
+                      <CardTitle className="text-white text-2xl font-bold">Online Courses</CardTitle>
                     </div>
                   </CardHeader>
                   <CardContent className="pb-6">

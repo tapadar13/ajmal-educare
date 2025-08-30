@@ -42,7 +42,7 @@ export default function AboutPage() {
                 Excellence in education for aspiring students across North-East
                 India.
               </p>
-              
+
               {/* Gradient Underline */}
               <div className="flex justify-center mt-6">
                 <div className="w-48 h-[2px] bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"></div>
@@ -123,15 +123,18 @@ export default function AboutPage() {
                   Sets Us Apart
                 </span>
               </h2>
+              <p className="text-xl text-gray-600 mt-4 max-w-4xl mx-auto">
+                A blend of excellence, accessibility, and mentorship that empowers students to rise beyond limitations
+              </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
               <div className="relative rounded-2xl border-2 border-black overflow-hidden">
                 <Card className="rounded-none shadow-none gap-2 border-0">
                   <CardHeader className="flex flex-row items-center gap-3 pt-6 pb-6 bg-gradient-to-r from-blue-600 to-purple-600">
                     <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center">
                       {GradientIcon({ Icon: BookOpen, id: "about-mission" })}
                     </div>
-                    <CardTitle className="text-white text-xl">
+                    <CardTitle className="text-white text-2xl font-bold">
                       Mission-Driven Focus
                     </CardTitle>
                   </CardHeader>
@@ -139,7 +142,11 @@ export default function AboutPage() {
                     <CardDescription className="text-lg">
                       Education is our tool for social transformation and we
                       prioritize merit over means, offering scholarships and
-                      free boarding to talent across the region.
+                      free boarding to talent across the region. We are driven
+                      by the belief that true progress happens when
+                      opportunities reach those who need them the most. Our
+                      mission ensures that every deserving student, regardless
+                      of financial background, finds a place to thrive here.
                     </CardDescription>
                   </CardContent>
                 </Card>
@@ -151,14 +158,17 @@ export default function AboutPage() {
                     <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center">
                       {GradientIcon({ Icon: Award, id: "about-results" })}
                     </div>
-                    <CardTitle className="text-white text-xl">
+                    <CardTitle className="text-white text-2xl font-bold">
                       Proven Results
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="pb-6">
                     <CardDescription className="text-lg">
                       Over 1,400 selections in NEET, JEE and APSC, with alumni
-                      in top universities and government services.
+                      in top institutes and government services across India.
+                      These results are not just numbers they are stories of
+                      determination, resilience, and a support system that
+                      refuses to let students give up on their dreams.
                     </CardDescription>
                   </CardContent>
                 </Card>
@@ -173,7 +183,7 @@ export default function AboutPage() {
                         id: "about-faculty",
                       })}
                     </div>
-                    <CardTitle className="text-white text-xl">
+                    <CardTitle className="text-white text-2xl font-bold">
                       Exceptional Faculty
                     </CardTitle>
                   </CardHeader>
@@ -181,7 +191,9 @@ export default function AboutPage() {
                     <CardDescription className="text-lg">
                       Faculty includes seasoned professionals, ex-bureaucrats,
                       former civil servants, and IIT/NIT-qualified educators who
-                      provide personal mentorship.
+                      provide personal mentorship. Their guidance goes beyond
+                      academics, shaping students into confident individuals
+                      ready to face real-world challenges.
                     </CardDescription>
                   </CardContent>
                 </Card>
@@ -193,7 +205,7 @@ export default function AboutPage() {
                     <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center">
                       {GradientIcon({ Icon: Heart, id: "about-holistic" })}
                     </div>
-                    <CardTitle className="text-white text-xl">
+                    <CardTitle className="text-white text-2xl font-bold">
                       Holistic Development
                     </CardTitle>
                   </CardHeader>
@@ -201,19 +213,22 @@ export default function AboutPage() {
                     <CardDescription className="text-lg">
                       We cultivate strong character and leadership through mock
                       interviews, current-affairs training, and
-                      personality-building sessions.
+                      personality-building sessions. Our goal is to prepare
+                      students not just for exams, but for life equipping them
+                      with confidence, communication skills, and a sense of
+                      purpose.
                     </CardDescription>
                   </CardContent>
                 </Card>
               </div>
 
-              <div className="relative rounded-2xl border-2 border-black md:col-span-2 md:max-w-md md:mx-auto overflow-hidden">
+              <div className="relative rounded-2xl border-2 border-black md:col-span-2 md:justify-self-center md:w-full md:max-w-[calc(50%-0.75rem)] overflow-hidden">
                 <Card className="rounded-none shadow-none gap-2 border-0">
                   <CardHeader className="flex flex-row items-center gap-3 pt-6 pb-6 bg-gradient-to-r from-blue-600 to-purple-600">
                     <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center">
                       {GradientIcon({ Icon: MessageSquare, id: "about-rural" })}
                     </div>
-                    <CardTitle className="text-white text-xl">
+                    <CardTitle className="text-white text-2xl font-bold">
                       Focus on Rural Talent
                     </CardTitle>
                   </CardHeader>
@@ -221,7 +236,9 @@ export default function AboutPage() {
                     <CardDescription className="text-lg">
                       Most of our students come from rural and economically
                       weaker backgrounds and we work tirelessly to remove every
-                      barrier.
+                      barrier. By providing resources, mentorship, and
+                      encouragement, we unlock hidden potential and give voice
+                      to students who might otherwise be overlooked.
                     </CardDescription>
                   </CardContent>
                 </Card>
@@ -241,14 +258,14 @@ export default function AboutPage() {
                 </span>
               </h3>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
               <div className="relative rounded-2xl border-2 border-black overflow-hidden">
                 <Card className="rounded-none shadow-none gap-2 border-0">
                   <CardHeader className="flex flex-row items-center gap-3 pt-6 pb-6 bg-gradient-to-r from-blue-600 to-purple-600">
                     <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center">
                       {GradientIcon({ Icon: Award, id: "pillar-scholarship" })}
                     </div>
-                    <CardTitle className="text-white text-xl">
+                    <CardTitle className="text-white text-2xl font-bold">
                       Scholarship Led Access
                     </CardTitle>
                   </CardHeader>
@@ -256,7 +273,9 @@ export default function AboutPage() {
                     <CardDescription className="text-lg">
                       Merit-based full/partial scholarships to deserving
                       students which ensures no student is deprived of
-                      opportunity.
+                      opportunity. This ensures that financial constraints never
+                      overshadow talent, and every bright mind gets the chance
+                      to shine.
                     </CardDescription>
                   </CardContent>
                 </Card>
@@ -268,14 +287,16 @@ export default function AboutPage() {
                     <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center">
                       {GradientIcon({ Icon: BookOpen, id: "pillar-academics" })}
                     </div>
-                    <CardTitle className="text-white text-xl">
+                    <CardTitle className="text-white text-2xl font-bold">
                       Rigorous Academics
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="pb-6">
                     <CardDescription className="text-lg">
                       Comprehensive test schedules, performance tracking, and
-                      weekly analysis ensure steady progress.
+                      weekly analysis ensure steady progress. Our structured
+                      system builds discipline, consistency, and
+                      resilience—qualities essential for long-term success.
                     </CardDescription>
                   </CardContent>
                 </Card>
@@ -290,14 +311,15 @@ export default function AboutPage() {
                         id: "pillar-experts",
                       })}
                     </div>
-                    <CardTitle className="text-white text-xl">
+                    <CardTitle className="text-white text-2xl font-bold">
                       Subject-Matter Experts
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="pb-6">
                     <CardDescription className="text-lg">
                       Classes led by experienced faculty with proven track
-                      records.
+                      records. With years of expertise, they simplify complex
+                      concepts and instill confidence in every learner.
                     </CardDescription>
                   </CardContent>
                 </Card>
@@ -309,20 +331,22 @@ export default function AboutPage() {
                     <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center">
                       {GradientIcon({ Icon: Heart, id: "pillar-beyond" })}
                     </div>
-                    <CardTitle className="text-white text-xl">
+                    <CardTitle className="text-white text-2xl font-bold">
                       Beyond Exams
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="pb-6">
                     <CardDescription className="text-lg">
                       Coaching for confidence, interview skills, leadership, and
-                      ethical growth.
+                      ethical growth. We focus on nurturing well- rounded
+                      individuals who succeed not just in academics, but in
+                      their careers and communities.
                     </CardDescription>
                   </CardContent>
                 </Card>
               </div>
 
-              <div className="relative rounded-2xl border-2 border-black md:col-span-2 md:max-w-md md:mx-auto overflow-hidden">
+              <div className="relative rounded-2xl border-2 border-black md:col-span-2 md:justify-self-center md:w-full md:max-w-[calc(50%-0.75rem)] overflow-hidden">
                 <Card className="rounded-none shadow-none gap-2 border-0">
                   <CardHeader className="flex flex-row items-center gap-3 pt-6 pb-6 bg-gradient-to-r from-blue-600 to-purple-600">
                     <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center">
@@ -331,14 +355,16 @@ export default function AboutPage() {
                         id: "pillar-community",
                       })}
                     </div>
-                    <CardTitle className="text-white text-xl">
+                    <CardTitle className="text-white text-2xl font-bold">
                       Community Impact
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="pb-6">
                     <CardDescription className="text-lg">
                       Each success story uplifts entire communities, reinforcing
-                      education as a powerful social equalizer.
+                      education as a powerful social equalizer. Our students
+                      become role models, inspiring others to dream bigger and
+                      proving that education can transform generations.
                     </CardDescription>
                   </CardContent>
                 </Card>

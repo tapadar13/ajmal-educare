@@ -1,15 +1,25 @@
 "use client";
 
-import Header from '@/components/layout/Header'
-import Footer from '@/components/layout/Footer'
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
-import Image from 'next/image'
-import { Award, MessageSquare, BookOpen, Heart, ClipboardList } from 'lucide-react'
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+} from "@/components/ui/card";
+import Image from "next/image";
+import {
+  Award,
+  MessageSquare,
+  BookOpen,
+  Heart,
+  ClipboardList,
+} from "lucide-react";
 
 function GradientIcon({ Icon }) {
-  return (
-    <Icon className="w-5 h-5 text-white" />
-  );
+  return <Icon className="w-5 h-5 text-white" />;
 }
 
 export default function Super40Page() {
@@ -23,12 +33,16 @@ export default function Super40Page() {
           <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div className="text-center max-w-4xl mx-auto">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
-                Ajmal <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Super 40</span>
+                Ajmal{" "}
+                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                  Super 40
+                </span>
               </h1>
               <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
-                Premier coaching institute for NEET and JEE in Assam and Northeast India
+                Premier coaching institute for NEET and JEE in Assam and
+                Northeast India
               </h2>
-              
+
               {/* Gradient Underline */}
               <div className="flex justify-center mt-6">
                 <div className="w-48 h-[2px] bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"></div>
@@ -38,35 +52,43 @@ export default function Super40Page() {
             {/* Narrative */}
             <div className="mt-10 text-xl max-w-5xl mx-auto space-y-6 text-gray-700 leading-relaxed">
               <p>
-                Founded in 2016 under the aegis of the Ajmal Foundation, Ajmal Super 40 stands as the premier
-                coaching institute for NEET and JEE in Assam and Northeast India. Super 40 is dedicated to unlocking
-                the academic potential of rural and underprivileged bright minds. To date, over 1,400+ selections in
-                NEET and JEE underpin our track record of excellence.
+                Founded in 2016 under the aegis of the Ajmal Foundation, Ajmal
+                Super 40 stands as the premier coaching institute for NEET and
+                JEE in Assam and Northeast India. Super 40 is dedicated to
+                unlocking the academic potential of rural and underprivileged
+                bright minds. To date, over 1,400+ selections in NEET and JEE
+                underpin our track record of excellence.
               </p>
               <p>
-                At Ajmal Super 40, we pride ourselves on having a team of highly qualified and experienced faculties
-                from IITs and NITs. Our educators bring a wealth of knowledge and expertise, ensuring that our
-                students receive the best possible guidance.
+                At Ajmal Super 40, we pride ourselves on having a team of highly
+                qualified and experienced faculties from IITs and NITs. Our
+                educators bring a wealth of knowledge and expertise, ensuring
+                that our students receive the best possible guidance.
               </p>
               <p>
-                We understand that each student has unique challenges and questions, that's why Ajmal Super 40
-                offers personalized doubt-solving sessions. Our dedicated faculty members provide one-on-one
-                assistance to ensure that no doubt goes unresolved, which helps students establish a solid
-                foundation and builds their confidence.
+                We understand that each student has unique challenges and
+                questions, that's why Ajmal Super 40 offers personalized
+                doubt-solving sessions. Our dedicated faculty members provide
+                one-on-one assistance to ensure that no doubt goes unresolved,
+                which helps students establish a solid foundation and builds
+                their confidence.
               </p>
               <p>
-                Regular assessment is key to success in competitive exams for IIT and JEE aspirants. At Ajmal Super
-                40, we conduct weekly mock tests that simulate the real exam environment. Through these exams,
-                students can evaluate their level of preparation, identify their areas of weakness and enhance their
-                performance.
+                Regular assessment is key to success in competitive exams for
+                IIT and JEE aspirants. At Ajmal Super 40, we conduct weekly mock
+                tests that simulate the real exam environment. Through these
+                exams, students can evaluate their level of preparation,
+                identify their areas of weakness and enhance their performance.
               </p>
               <p>
-                Our integrated teaching approach ensures that students are well-prepared for both board and
-                competitive exams like NEET and JEE. By aligning our curriculum with the school syllabus and
-                competitive exam requirements, we provide a holistic education that enhances students' potential.
+                Our integrated teaching approach ensures that students are
+                well-prepared for both board and competitive exams like NEET and
+                JEE. By aligning our curriculum with the school syllabus and
+                competitive exam requirements, we provide a holistic education
+                that enhances students' potential.
               </p>
             </div>
-            
+
             {/* Gradient Underline */}
             <div className="flex justify-center mt-8">
               <div className="w-48 h-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"></div>
@@ -78,23 +100,33 @@ export default function Super40Page() {
         <section className="py-12 lg:py-12 bg-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-10">
-              Why <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Ajmal Super40</span> Stands Out
+              Why{" "}
+              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                Ajmal Super 40
+              </span>{" "}
+              Stands Out
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
               <div className="relative rounded-2xl border-2 border-black overflow-hidden">
                 <Card className="relative z-0 rounded-none h-full shadow-none border-0">
                   <CardHeader className="flex flex-row items-center gap-3 pt-6 pb-6 bg-gradient-to-r from-blue-600 to-purple-600">
                     <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center">
-                      {GradientIcon({ Icon: Award, id: 'card-award' })}
+                      {GradientIcon({ Icon: Award, id: "card-award" })}
                     </div>
-                    <CardTitle className="text-white">Proven Academic Success</CardTitle>
+                    <CardTitle className="text-white text-2xl font-bold">
+                      Proven Academic Success
+                    </CardTitle>
                   </CardHeader>
-                <CardContent className="pb-6">
-                  <CardDescription className="text-gray-600 text-lg">
-                    With 1400+ NEET/JEE selections, our results speak volumes. We consistently nurture students into
-                    doctors and engineers through structured coaching and expert guidance.
-                  </CardDescription>
-                </CardContent>
+                  <CardContent className="pb-6">
+                    <CardDescription className="text-gray-600 text-lg">
+                      With 1400+ NEET/JEE selections, our results speak volumes.
+                      We consistently nurture students into doctors and
+                      engineers through structured coaching and expert guidance.
+                      Every selection is a testament to years of dedication,
+                      rigorous practice, and a support system that never lets
+                      students lose sight of their goals.
+                    </CardDescription>
+                  </CardContent>
                 </Card>
               </div>
 
@@ -102,16 +134,22 @@ export default function Super40Page() {
                 <Card className="relative z-0 rounded-none h-full shadow-none border-0">
                   <CardHeader className="flex flex-row items-center gap-3 pt-6 pb-6 bg-gradient-to-r from-blue-600 to-purple-600">
                     <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center">
-                      {GradientIcon({ Icon: ClipboardList, id: 'card-tests' })}
+                      {GradientIcon({ Icon: ClipboardList, id: "card-tests" })}
                     </div>
-                    <CardTitle className="text-white">Weekly Mock Tests &amp; Detailed Analysis</CardTitle>
+                    <CardTitle className="text-white text-2xl font-bold">
+                      Weekly Mock Tests &amp; Detailed Analysis
+                    </CardTitle>
                   </CardHeader>
-                <CardContent className="pb-6">
-                  <CardDescription className="text-gray-600 text-lg">
-                    We simulate real NEET/JEE conditions every week. Tests are followed by in depth analysis and
-                    tailored feedback, helping students overcome weaknesses and steadily build exam confidence.
-                  </CardDescription>
-                </CardContent>
+                  <CardContent className="pb-6">
+                    <CardDescription className="text-gray-600 text-lg">
+                      We simulate real NEET/JEE conditions every week. Tests are
+                      followed by in depth analysis and tailored feedback,
+                      helping students overcome weaknesses and steadily build
+                      exam confidence. This consistent practice reduces exam
+                      anxiety, sharpens time management, and ensures students
+                      are always one step ahead in their preparation.
+                    </CardDescription>
+                  </CardContent>
                 </Card>
               </div>
 
@@ -119,16 +157,21 @@ export default function Super40Page() {
                 <Card className="relative z-0 rounded-none h-full shadow-none border-0">
                   <CardHeader className="flex flex-row items-center gap-3 pt-6 pb-6 bg-gradient-to-r from-blue-600 to-purple-600">
                     <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center">
-                      {GradientIcon({ Icon: MessageSquare, id: 'card-msg' })}
+                      {GradientIcon({ Icon: MessageSquare, id: "card-msg" })}
                     </div>
-                    <CardTitle className="text-white">Individualized Doubt Sessions</CardTitle>
+                    <CardTitle className="text-white text-2xl font-bold">
+                      Individualized Doubt Sessions
+                    </CardTitle>
                   </CardHeader>
-                <CardContent className="pb-6">
-                  <CardDescription className="text-gray-600 text-lg">
-                    Our teachers are available around the clock for one-on-one doubt resolution, ensuring personalized
-                    attention and academic clarity for each student.
-                  </CardDescription>
-                </CardContent>
+                  <CardContent className="pb-6">
+                    <CardDescription className="text-gray-600 text-lg">
+                      Our teachers are available around the clock for one-on-one
+                      doubt resolution, ensuring personalized attention and
+                      academic clarity for each student. By addressing
+                      individual challenges, we build strong conceptual
+                      foundations and confidence in every learner.
+                    </CardDescription>
+                  </CardContent>
                 </Card>
               </div>
 
@@ -136,33 +179,46 @@ export default function Super40Page() {
                 <Card className="relative z-0 rounded-none h-full shadow-none border-0">
                   <CardHeader className="flex flex-row items-center gap-3 pt-6 pb-6 bg-gradient-to-r from-blue-600 to-purple-600">
                     <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center">
-                      {GradientIcon({ Icon: BookOpen, id: 'card-book' })}
+                      {GradientIcon({ Icon: BookOpen, id: "card-book" })}
                     </div>
-                    <CardTitle className="text-white">Focused Teaching for Board &amp; Entrance Exams</CardTitle>
+                    <CardTitle className="text-white text-2xl font-bold">
+                      Focused Teaching for Board &amp; Entrance Exams
+                    </CardTitle>
                   </CardHeader>
-                <CardContent className="pb-6">
-                  <CardDescription className="text-gray-600 text-lg">
-                    We prepare Class XI and XII students for board exams concurrently with NEET/JEE, avoiding
-                    academic mismatches and maximizing time efficiency.
-                  </CardDescription>
-                </CardContent>
+                  <CardContent className="pb-6">
+                    <CardDescription className="text-gray-600 text-lg">
+                      We prepare Class XI and XII students for board exams
+                      concurrently with NEET/JEE, avoiding academic mismatches
+                      and maximizing time efficiency. This integrated approach
+                      ensures that students don’t have to choose between boards
+                      and competitive exams success as one strengthens
+                      performance in the other.
+                    </CardDescription>
+                  </CardContent>
                 </Card>
               </div>
 
-              <div className="relative rounded-2xl border-2 border-black md:col-span-2 md:max-w-md md:mx-auto overflow-hidden">
+              <div className="relative rounded-2xl border-2 border-black md:col-span-2 md:justify-self-center md:w-full md:max-w-[calc(50%-0.75rem)] overflow-hidden">
                 <Card className="relative z-0 rounded-none h-full shadow-none border-0">
                   <CardHeader className="flex flex-row items-center gap-3 pt-6 pb-6 bg-gradient-to-r from-blue-600 to-purple-600">
                     <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center">
-                      {GradientIcon({ Icon: Heart, id: 'card-heart' })}
+                      {GradientIcon({ Icon: Heart, id: "card-heart" })}
                     </div>
-                    <CardTitle className="text-white">Holistic Mentorship &amp; Motivation</CardTitle>
+                    <CardTitle className="text-white text-2xl font-bold">
+                      Holistic Mentorship &amp; Motivation
+                    </CardTitle>
                   </CardHeader>
-                <CardContent className="pb-6">
-                  <CardDescription className="text-gray-600 text-lg">
-                    From motivational sessions to performance tracking, students receive emotional and academic
-                    support throughout their journey.
-                  </CardDescription>
-                </CardContent>
+                  <CardContent className="pb-6">
+                    <CardDescription className="text-gray-600 text-lg">
+                      From motivational sessions to performance tracking,
+                      students receive emotional and academic support throughout
+                      their journey. We recognize that success in competitive
+                      exams demands more than knowledge it requires resilience,
+                      self-belief, and the right guidance. Our mentors serve as
+                      role models, instilling confidence and purpose every step
+                      of the way.
+                    </CardDescription>
+                  </CardContent>
                 </Card>
               </div>
             </div>
@@ -173,17 +229,39 @@ export default function Super40Page() {
         <section className="py-12 lg:py-12 bg-yellow-200/60">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-10">
-              Our <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Outstanding Performers</span> in NEET &amp; JEE
+              Our{" "}
+              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                Outstanding Performers
+              </span>{" "}
+              in NEET &amp; JEE
             </h2>
             <div className="space-y-8">
               <div className="rounded-xl overflow-hidden shadow-xl border border-yellow-300/40">
-                <Image src="/images/super40/neet-1.jpg" alt="Outstanding performers in NEET" width={1600} height={900} className="w-full h-auto" />
+                <Image
+                  src="/images/super40/neet-1.jpg"
+                  alt="Outstanding performers in NEET"
+                  width={1600}
+                  height={900}
+                  className="w-full h-auto"
+                />
               </div>
               <div className="rounded-xl overflow-hidden shadow-xl border border-yellow-300/40">
-                <Image src="/images/super40/neet-2.jpg" alt="Outstanding performers in NEET" width={1600} height={900} className="w-full h-auto" />
+                <Image
+                  src="/images/super40/neet-2.jpg"
+                  alt="Outstanding performers in NEET"
+                  width={1600}
+                  height={900}
+                  className="w-full h-auto"
+                />
               </div>
               <div className="rounded-xl overflow-hidden shadow-xl border border-yellow-300/40">
-                <Image src="/images/super40/jee.jpg" alt="Outstanding performers in JEE" width={1600} height={900} className="w-full h-auto" />
+                <Image
+                  src="/images/super40/jee.jpg"
+                  alt="Outstanding performers in JEE"
+                  width={1600}
+                  height={900}
+                  className="w-full h-auto"
+                />
               </div>
             </div>
           </div>
@@ -192,25 +270,35 @@ export default function Super40Page() {
         {/* Courses */}
         <section className="py-12 lg:py-12 bg-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-6">Our <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Popular</span> Courses</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-6">
+              Our{" "}
+              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                Popular
+              </span>{" "}
+              Courses
+            </h2>
             <p className="max-w-4xl text-xl mx-auto text-center text-gray-700 mb-10">
-              Our popular courses are Five Year Integrated Course from class VIII to XII, Four Year Integrated
-              Course from class IX to XII for students, Two year Integrated Course from class XI to XII &amp; One Year
-              Integrated Course for students who have passed class XII.
+              Our popular courses are Five Year Integrated Course from class
+              VIII to XII, Four Year Integrated Course from class IX to XII for
+              students, Two year Integrated Course from class XI to XII &amp;
+              One Year Integrated Course for students who have passed class XII.
             </p>
 
-            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
               <div className="relative rounded-2xl border-2 border-black overflow-hidden">
                 <Card className="relative z-0 rounded-none h-full shadow-none border-0">
                   <CardHeader className="flex flex-row items-center gap-3 pt-6 pb-6 bg-gradient-to-r from-blue-600 to-purple-600">
                     <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center">
                       {GradientIcon({ Icon: ClipboardList })}
                     </div>
-                    <CardTitle className="text-white">Test Series</CardTitle>
+                    <CardTitle className="text-white text-2xl font-bold">Test Series</CardTitle>
                   </CardHeader>
                   <CardContent className="pb-6">
                     <CardDescription className="text-gray-600 text-lg">
-                      Comprehensive test series designed to simulate real NEET and JEE exam conditions, helping students assess their preparation level and improve performance through detailed analysis and feedback.
+                      Comprehensive test series designed to simulate real NEET
+                      and JEE exam conditions, helping students assess their
+                      preparation level and improve performance through detailed
+                      analysis and feedback.
                     </CardDescription>
                   </CardContent>
                 </Card>
@@ -221,11 +309,16 @@ export default function Super40Page() {
                     <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center">
                       {GradientIcon({ Icon: BookOpen })}
                     </div>
-                    <CardTitle className="text-white">One Year Integrated Course</CardTitle>
+                    <CardTitle className="text-white text-2xl font-bold">
+                      One Year Integrated Course
+                    </CardTitle>
                   </CardHeader>
                   <CardContent className="pb-6">
                     <CardDescription className="text-gray-600 text-lg">
-                      Intensive one-year program for students who have passed class XII, providing comprehensive preparation for NEET and JEE with expert faculty guidance and structured curriculum.
+                      Intensive one-year program for students who have passed
+                      class XII, providing comprehensive preparation for NEET
+                      and JEE with expert faculty guidance and structured
+                      curriculum.
                     </CardDescription>
                   </CardContent>
                 </Card>
@@ -238,6 +331,3 @@ export default function Super40Page() {
     </div>
   );
 }
-
-
-
