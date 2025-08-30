@@ -3,12 +3,12 @@
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
-import { BookOpen, CalendarCheck2, GraduationCap, Clock, Monitor, Home, Globe } from 'lucide-react'
+import { Clock, Monitor, Home, Globe } from 'lucide-react'
 import Image from 'next/image'
 
 function GradientIcon({ Icon }) {
   return (
-    <Icon className="w-5 h-5 text-white" />
+    <Icon className="size-5 text-white" />
   );
 }
 
@@ -27,6 +27,11 @@ export default function IASAcademyPage() {
               </h1>
               <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Inspired By Excellence & Innovation</h2>
               <p className="text-2xl sm:text-lg text-gray-700">We offer a wide range of high quality of teaching and extra-curricular activities.</p>
+              
+              {/* Gradient Underline */}
+              <div className="flex justify-center mt-6">
+                <div className="w-48 h-[2px] bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"></div>
+              </div>
             </div>
 
             {/* Narrative */}
@@ -37,11 +42,6 @@ export default function IASAcademyPage() {
               <p>
                 We blend academic excellence with holistic personality development, guided by a team of nationally renowned faculty members, seasoned administrators, and former civil servants. Our programs are designed to foster critical thinking, leadership, and a deep understanding of the Indian polity, economy, and society.
               </p>
-            </div>
-            
-            {/* Gradient Underline */}
-            <div className="flex justify-center mt-8">
-              <div className="w-48 h-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"></div>
             </div>
           </div>
         </section>

@@ -28,6 +28,11 @@ export default function Super40Page() {
               <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
                 Premier coaching institute for NEET and JEE in Assam and Northeast India
               </h2>
+              
+              {/* Gradient Underline */}
+              <div className="flex justify-center mt-6">
+                <div className="w-48 h-[2px] bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"></div>
+              </div>
             </div>
 
             {/* Narrative */}

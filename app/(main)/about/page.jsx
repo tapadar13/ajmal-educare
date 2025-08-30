@@ -42,6 +42,11 @@ export default function AboutPage() {
                 Excellence in education for aspiring students across North-East
                 India.
               </p>
+              
+              {/* Gradient Underline */}
+              <div className="flex justify-center mt-6">
+                <div className="w-48 h-[2px] bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"></div>
+              </div>
             </div>
             <div className="mt-10 max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-xl ring-1 ring-black/5">
               <Image
