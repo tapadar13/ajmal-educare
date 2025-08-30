@@ -10,7 +10,6 @@ import WhyChooseSection from '@/components/sections/WhyChooseSection'
 import MethodologySection from '@/components/sections/MethodologySection'
 import NewsSection from '@/components/sections/NewsSection'
 import LeadershipSection from '@/components/sections/LeadershipSection'
-import BottomBanner from '@/components/ui/bottom-banner'
 
 export default function Home() {
   return (
