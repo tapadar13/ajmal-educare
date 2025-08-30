@@ -31,7 +31,7 @@ export default function Home() {
         </div>
         <Footer />
       </div>
-      <BottomBanner text="Ajmal Educare Pvt Ltd" />
+      {/* <BottomBanner text="Ajmal Educare Pvt Ltd" /> */}
     </>
   );
 }
