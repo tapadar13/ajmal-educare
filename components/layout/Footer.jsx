@@ -1,8 +1,47 @@
 import Link from 'next/link'
-import { Badge } from '@/components/ui/badge'
-import { MapPin, Phone, Mail, ArrowRight } from 'lucide-react'
+import { useState } from 'react'
+import { MapPin, Phone, Mail, ArrowRight, ChevronDown } from 'lucide-react'
 
 const Footer = () => {
+  const [expandedSections, setExpandedSections] = useState({
+    quickLinks: false,
+    programs: false,
+    contactInfo: false
+  })
+
+  const toggleSection = (section) => {
+    setExpandedSections(prev => ({
+      ...prev,
+      [section]: !prev[section]
+    }))
+  }
+
+  // Collapsible Section Component for Mobile
+  const CollapsibleSection = ({ title, isExpanded, onToggle, children, sectionKey }) => (
+    <div>
+      {/* Mobile Header - Only visible on mobile */}
+      <button
+        onClick={() => onToggle(sectionKey)}
+        className="lg:hidden w-full flex items-center justify-between text-lg font-bold mb-2 text-left"
+      >
+        {title}
+        <ChevronDown 
+          className={`size-5 transition-transform duration-200 ${
+            isExpanded ? 'rotate-180' : ''
+          }`}
+        />
+      </button>
+      
+      {/* Desktop Header - Only visible on desktop */}
+      <h4 className="hidden lg:block text-lg font-bold mb-6">{title}</h4>
+      
+      {/* Content - Always visible on desktop, conditionally on mobile */}
+      <div className={`lg:block ${isExpanded ? 'block mb-4' : 'hidden'}`}>
+        {children}
+      </div>
+    </div>
+  )
+
   const quickLinks = [
     { name: 'About Us', href: '/about' },
     { name: 'Our Academies', href: '#academies' },
@@ -23,64 +62,76 @@ const Footer = () => {
       
       <div className="relative">
         {/* Main Footer Content */}
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16">
-          <div className="grid lg:grid-cols-4 gap-8 lg:gap-12">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-16">
+          <div className="grid lg:grid-cols-4 gap-4 lg:gap-12">
             {/* Company Info */}
             <div className="lg:col-span-1">
-              <div className="flex items-center space-x-3 mb-6">
+              <div className="flex items-center space-x-3 mb-4 lg:mb-6">
                 <div>
                   <h3 className="text-xl font-bold">Ajmal Educare India Pvt Ltd</h3>
                   <p className="text-gray-400 text-sm font-medium">Excellence in Education</p>
                 </div>
               </div>
               
-              <p className="text-gray-300 leading-relaxed mb-6">
+              <p className="text-gray-300 leading-relaxed mb-4 lg:mb-6">
                 Empowering students to achieve their dreams through innovative teaching 
                 methodologies and comprehensive educational programs.
               </p>
             </div>
 
             {/* Quick Links */}
-            <div>
-              <h4 className="text-lg font-bold mb-6">Quick Links</h4>
-              <nav className="space-y-4">
+            <CollapsibleSection
+              title="Quick Links"
+              isExpanded={expandedSections.quickLinks}
+              onToggle={toggleSection}
+              sectionKey="quickLinks"
+            >
+              <nav className="space-y-2 lg:space-y-4">
                 {quickLinks.map((link) => (
                   <Link
                     key={link.name}
                     href={link.href}
                     className="text-gray-300 hover:text-white transition-colors duration-200 flex items-center group"
                   >
-                    <ArrowRight className="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <ArrowRight className="size-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" />
                     {link.name}
                   </Link>
                 ))}
               </nav>
-            </div>
+            </CollapsibleSection>
 
             {/* Our Programs */}
-            <div>
-              <h4 className="text-lg font-bold mb-6">Our Programs</h4>
-              <nav className="space-y-4">
+            <CollapsibleSection
+              title="Our Programs"
+              isExpanded={expandedSections.programs}
+              onToggle={toggleSection}
+              sectionKey="programs"
+            >
+              <nav className="space-y-2 lg:space-y-4">
                 {programs.map((program) => (
                   <Link
                     key={program.name}
                     href={program.href}
                     className="text-gray-300 hover:text-white transition-colors duration-200 flex items-center group"
                   >
-                    <ArrowRight className="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <ArrowRight className="size-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" />
                     {program.name}
                   </Link>
                 ))}
               </nav>
-            </div>
+            </CollapsibleSection>
 
             {/* Contact Info */}
-            <div>
-              <h4 className="text-lg font-bold mb-6">Contact Info</h4>
-              <div className="space-y-6">
+            <CollapsibleSection
+              title="Contact Info"
+              isExpanded={expandedSections.contactInfo}
+              onToggle={toggleSection}
+              sectionKey="contactInfo"
+            >
+              <div className="space-y-3 lg:space-y-6">
                 <div className="flex items-start space-x-3">
-                  <div className="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                    <MapPin className="w-4 h-4 text-gray-400" />
+                  <div className="size-8 bg-gray-800 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <MapPin className="size-4 text-gray-400" />
                   </div>
                   <div>
                     <p className="font-semibold text-white mb-1">Address</p>
@@ -91,8 +142,8 @@ const Footer = () => {
                 </div>
                 
                 <div className="flex items-start space-x-3">
-                  <div className="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                    <Phone className="w-4 h-4 text-gray-400" />
+                  <div className="size-8 bg-gray-800 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <Phone className="size-4 text-gray-400" />
                   </div>
                   <div>
                     <p className="font-semibold text-white mb-1">Phone</p>
@@ -102,8 +153,8 @@ const Footer = () => {
                 </div>
                 
                 <div className="flex items-start space-x-3">
-                  <div className="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                    <Mail className="w-4 h-4 text-gray-400" />
+                  <div className="size-8 bg-gray-800 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <Mail className="size-4 text-gray-400" />
                   </div>
                   <div>
                     <p className="font-semibold text-white mb-1">Email</p>
@@ -112,7 +163,7 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </CollapsibleSection>
           </div>
         </div>
 
