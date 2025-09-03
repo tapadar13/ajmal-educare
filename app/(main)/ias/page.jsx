@@ -137,7 +137,7 @@ export default function IASAcademyPage() {
                 <Card className="relative z-0 rounded-none h-full shadow-none border-0">
                   <CardHeader className="relative flex flex-col items-center justify-center pt-12 pb-12 text-center min-h-[240px] overflow-hidden">
                     <Image 
-                      src="/images/programs/1.webp" 
+                      src="/images/programs/apsc-1.avif" 
                       alt="Program background" 
                       fill 
                       className="object-cover object-center"
@@ -160,7 +160,7 @@ export default function IASAcademyPage() {
                 <Card className="relative z-0 rounded-none h-full shadow-none border-0">
                   <CardHeader className="relative flex flex-col items-center justify-center pt-12 pb-12 text-center min-h-[240px] overflow-hidden">
                     <Image 
-                      src="/images/programs/1.webp" 
+                      src="/images/programs/upsc-1.jpeg" 
                       alt="Program background" 
                       fill 
                       className="object-cover object-center"
@@ -183,7 +183,7 @@ export default function IASAcademyPage() {
                 <Card className="relative z-0 rounded-none h-full shadow-none border-0">
                   <CardHeader className="relative flex flex-col items-center justify-center pt-12 pb-12 text-center min-h-[240px] overflow-hidden">
                     <Image 
-                      src="/images/programs/2.jpg" 
+                      src="/images/programs/3.jpeg" 
                       alt="Program background" 
                       fill 
                       className="object-cover object-center"
@@ -206,7 +206,7 @@ export default function IASAcademyPage() {
                 <Card className="relative z-0 rounded-none h-full shadow-none border-0">
                   <CardHeader className="relative flex flex-col items-center justify-center pt-12 pb-12 text-center min-h-[240px] overflow-hidden">
                     <Image 
-                      src="/images/programs/2.jpg" 
+                      src="/images/programs/3.jpeg" 
                       alt="Program background" 
                       fill 
                       className="object-cover object-center"
@@ -229,7 +229,7 @@ export default function IASAcademyPage() {
                 <Card className="relative z-0 rounded-none h-full shadow-none border-0">
                   <CardHeader className="relative flex flex-col items-center justify-center pt-12 pb-12 text-center min-h-[240px] overflow-hidden">
                     <Image 
-                      src="/images/programs/3.jpeg" 
+                      src="/images/programs/2.jpg" 
                       alt="Program background" 
                       fill 
                       className="object-cover object-center"
@@ -252,7 +252,7 @@ export default function IASAcademyPage() {
                 <Card className="relative z-0 rounded-none h-full shadow-none border-0">
                   <CardHeader className="relative flex flex-col items-center justify-center pt-12 pb-12 text-center min-h-[240px] overflow-hidden">
                     <Image 
-                      src="/images/programs/3.jpeg" 
+                      src="/images/programs/2.jpg" 
                       alt="Program background" 
                       fill 
                       className="object-cover object-center"
