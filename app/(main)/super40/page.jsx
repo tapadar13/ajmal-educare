@@ -130,28 +130,7 @@ export default function Super40Page() {
                 </Card>
               </div>
 
-              <div className="relative rounded-2xl border-2 border-black overflow-hidden">
-                <Card className="relative z-0 rounded-none h-full shadow-none border-0">
-                  <CardHeader className="flex flex-row items-center gap-3 pt-6 pb-6 bg-gradient-to-r from-blue-600 to-purple-600">
-                    <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center">
-                      {GradientIcon({ Icon: ClipboardList, id: "card-tests" })}
-                    </div>
-                    <CardTitle className="text-white text-2xl font-bold">
-                      Weekly Mock Tests &amp; Detailed Analysis
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="pb-6">
-                    <CardDescription className="text-gray-600 text-lg">
-                      We simulate real NEET/JEE conditions every week. Tests are
-                      followed by in depth analysis and tailored feedback,
-                      helping students overcome weaknesses and steadily build
-                      exam confidence. This consistent practice reduces exam
-                      anxiety, sharpens time management, and ensures students
-                      are always one step ahead in their preparation.
-                    </CardDescription>
-                  </CardContent>
-                </Card>
-              </div>
+              
 
               <div className="relative rounded-2xl border-2 border-black overflow-hidden">
                 <Card className="relative z-0 rounded-none h-full shadow-none border-0">
@@ -170,6 +149,29 @@ export default function Super40Page() {
                       academic clarity for each student. By addressing
                       individual challenges, we build strong conceptual
                       foundations and confidence in every learner.
+                    </CardDescription>
+                  </CardContent>
+                </Card>
+              </div>
+
+              <div className="relative rounded-2xl border-2 border-black overflow-hidden">
+                <Card className="relative z-0 rounded-none h-full shadow-none border-0">
+                  <CardHeader className="flex flex-row items-center gap-3 pt-6 pb-6 bg-gradient-to-r from-blue-600 to-purple-600">
+                    <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center">
+                      {GradientIcon({ Icon: ClipboardList, id: "card-tests" })}
+                    </div>
+                    <CardTitle className="text-white text-2xl font-bold">
+                      Weekly Mock Tests &amp; Detailed Analysis
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="pb-6">
+                    <CardDescription className="text-gray-600 text-lg">
+                      We simulate real NEET/JEE conditions every week. Tests are
+                      followed by in depth analysis and tailored feedback,
+                      helping students overcome weaknesses and steadily build
+                      exam confidence. This consistent practice reduces exam
+                      anxiety, sharpens time management, and ensures students
+                      are always one step ahead in their preparation.
                     </CardDescription>
                   </CardContent>
                 </Card>
