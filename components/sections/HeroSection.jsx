@@ -85,7 +85,7 @@ const HeroSection = () => {
               <div className="relative">
                 <div className="relative h-64 overflow-hidden rounded-xl mx-4">
                   <Image
-                    src="/images/super-40.jpg"
+                    src="/images/ajmal-super-40.JPG"
                     alt="Ajmal Super 40 Academy"
                     fill
                     className="object-fit rounded-xl"
