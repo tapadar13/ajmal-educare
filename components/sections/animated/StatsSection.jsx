@@ -6,7 +6,7 @@ import { Users, TrendingUp, Award, BookOpen } from "lucide-react";
 const StatsSection = () => {
   const stats = [
     { value: "12000+", label: "Students Mentored", icon: Users },
-    { value: "300+", label: "Toppers", icon: TrendingUp },
+    { value: "1800+", label: "Toppers", icon: TrendingUp },
     { value: "9+", label: "Years Experience", icon: Award },
     { value: "150+", label: "Expert Faculty", icon: BookOpen }
   ];

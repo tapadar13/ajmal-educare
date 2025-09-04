@@ -12,7 +12,7 @@ const AchievementsSection = () => {
     },
     {
       icon: Trophy,
-      number: "300+", 
+      number: "1800+", 
       label: "Toppers",
       description: "Students who secured top ranks"
     },
