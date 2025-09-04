@@ -59,11 +59,11 @@ const HeroSection = () => {
         {/* Academy Cards */}
         <div className="grid lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
           {/* Ajmal Super 40 */}
-          <Card className="overflow-hidden h-full flex flex-col min-h-[800px]">
+          <Card className="overflow-hidden h-full flex flex-col min-h-[800px] border border-gray-200/80 shadow-sm">
             <CardHeader className="p-0">
               {/* Academy Badge */}
               <div className="px-6 pt-6 pb-1">
-                <Badge className="bg-[#D5F2FE] text-blue-500 px-4 py-2 text-3xl font-semibold rounded-lg border-0 flex items-center gap-2">
+                <Badge className="group relative isolate inline-flex items-center justify-center overflow-hidden text-left font-semibold transition duration-300 ease-[cubic-bezier(0.4,0.36,0,1)] before:duration-300 before:ease-[cubic-bezier(0.4,0.36,0,1)] before:transtion-opacity rounded-lg shadow-[0_1px_theme(colors.white/0.07)_inset,0_1px_3px_theme(colors.gray.900/0.2)] before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:rounded-lg before:bg-gradient-to-b before:from-white/20 before:opacity-50 hover:before:opacity-100 after:pointer-events-none after:absolute after:inset-0 after:-z-10 after:rounded-lg after:bg-gradient-to-b after:from-white/10 after:from-[46%] after:to-[54%] after:mix-blend-overlay text-3xl px-4 py-2 ring-1 bg-blue-500 text-white ring-blue-500 border-0 gap-2">
                   <Target className="w-6 h-6" /> Ajmal Super 40
                 </Badge>
               </div>
@@ -159,11 +159,11 @@ const HeroSection = () => {
           </Card>
 
           {/* Ajmal IAS Academy */}
-          <Card className="overflow-hidden h-full flex flex-col min-h-[800px]">
+          <Card className="overflow-hidden h-full flex flex-col min-h-[800px] border border-gray-200/80 shadow-sm">
             <CardHeader className="p-0">
               {/* Academy Badge */}
               <div className="px-6 pt-6 pb-1">
-                <Badge className="bg-[#FFF0E1] text-orange-500 px-4 py-2 text-3xl font-semibold rounded-lg border-0 flex items-center gap-2">
+                <Badge className="group relative isolate inline-flex items-center justify-center overflow-hidden text-left font-semibold transition duration-300 ease-[cubic-bezier(0.4,0.36,0,1)] before:duration-300 before:ease-[cubic-bezier(0.4,0.36,0,1)] before:transtion-opacity rounded-lg shadow-[0_1px_theme(colors.white/0.07)_inset,0_1px_3px_theme(colors.gray.900/0.2)] before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:rounded-lg before:bg-gradient-to-b before:from-white/20 before:opacity-50 hover:before:opacity-100 after:pointer-events-none after:absolute after:inset-0 after:-z-10 after:rounded-lg after:bg-gradient-to-b after:from-white/10 after:from-[46%] after:to-[54%] after:mix-blend-overlay text-3xl px-4 py-2 ring-1 bg-orange-500 text-white ring-orange-500 border-0 gap-2">
                   <School className="w-6 h-6" /> Ajmal IAS Academy
                 </Badge>
               </div>
