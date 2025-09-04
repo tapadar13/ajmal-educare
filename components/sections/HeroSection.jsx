@@ -17,12 +17,12 @@ const HeroSection = () => {
         {/* Main Hero Content */}
         <div className="text-center mb-10 px-2 sm:px-0">
           
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight tracking-tight px-2">
-            Specialized{' '}
+          <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight tracking-tight px-2">
+            
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Academies
-            </span>
-          </h1>
+            Ajmal Educare
+            </span>{" "}India Pvt Ltd
+          </h3>
           
           <p className="text-lg sm:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Our academies are designed to cater to specific competitive examinations, providing 
