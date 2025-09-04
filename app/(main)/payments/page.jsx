@@ -12,7 +12,7 @@ export default function PaymentsPage() {
     {
       id: 'super40',
       name: 'Ajmal Super 40',
-      subtitle: 'Excellence in JEE, NEET Exam Preparation',
+      subtitle: 'The Intelligent Choice for NEET & JEE Coaching',
       price: '₹85,000',
       originalPrice: '₹1,20,000',
       duration: '/year',
@@ -37,7 +37,7 @@ export default function PaymentsPage() {
     {
       id: 'ias',
       name: 'Ajmal IAS Academy',
-      subtitle: 'Excellence in UPSC/IAS, APSC Preparation',
+      subtitle: 'Premier institute for UPSC/IAS & APSC preparation in Assam',
       price: '₹65,000',
       originalPrice: '₹95,000',
       duration: '/year',

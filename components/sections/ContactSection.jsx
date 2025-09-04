@@ -54,7 +54,7 @@ const ContactSection = () => {
   const academyLocations = [
     {
       name: "Ajmal Super 40",
-      description: "Excellence in JEE & NEET Preparation",
+      description: "The Intelligent Choice for NEET & JEE Coaching",
       color: "from-violet-600 to-indigo-600",
       bgColor: "bg-gradient-to-br from-indigo-50 to-violet-50",
       icon: Award,
@@ -91,7 +91,7 @@ const ContactSection = () => {
     },
     {
       name: "Ajmal IAS Academy",
-      description: "Excellence in UPSC & APSC Preparation",
+      description: "Premier institute for UPSC/IAS & APSC preparation in Assam",
       color: "from-blue-500 to-indigo-600",
       bgColor: "bg-gradient-to-br from-blue-50 to-indigo-50",
       icon: Users,
