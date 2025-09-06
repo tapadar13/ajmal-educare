@@ -37,7 +37,7 @@ export default function PaymentsPage() {
     {
       id: 'ias',
       name: 'Ajmal IAS Academy',
-      subtitle: 'Premier institute for UPSC/IAS & APSC preparation in Assam',
+      subtitle: 'Premier institute for UPSC/IAS & APSC preparation',
       price: '₹65,000',
       originalPrice: '₹95,000',
       duration: '/year',

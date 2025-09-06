@@ -171,7 +171,7 @@ const HeroSection = () => {
               {/* Title and Description */}
               <div className="px-6 pb-4">
                 <CardTitle className="text-xl font-medium text-gray-900 mb-3 min-h-[64px] flex items-center">
-                Premier institute for UPSC/IAS & APSC preparation in Assam
+                Premier institute for UPSC/IAS & APSC preparation
                 </CardTitle>
                 <div className="min-h-[80px]">
                   <p className="text-gray-600 leading-relaxed">
