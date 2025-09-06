@@ -135,22 +135,22 @@ const NewsSection = () => {
     {
       type: "video",
       title: "News18 Documentary",
-      thumbnail: "/images/news-media/news18-documentary.jpg"
+      thumbnail: "/images/updated-news-media/news18-documentary.jpg"
     },
     {
       type: "video",
       title: "DY365",
-      thumbnail: "/images/news-media/dy365-digital.jpg"
+      thumbnail: "/images/updated-news-media/dy365-digital.jpg"
     },
     {
       type: "video",
       title: "Monuwar Zama YT",
-      thumbnail: "/images/news-media/english-house.jpg"
+      thumbnail: "/images/updated-news-media/english-house.jpg"
     },
     {
       type: "video",
       title: "NEWS18 Northeast",
-      thumbnail: "/images/news-media/news18-ias-academy.jpg"
+      thumbnail: "/images/updated-news-media/news18-ias-academy.jpg"
     }
   ]
 
