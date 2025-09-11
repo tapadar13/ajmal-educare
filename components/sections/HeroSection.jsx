@@ -75,7 +75,7 @@ const HeroSection = () => {
                 </CardTitle>
                 <div className="min-h-[80px]">
                   <p className="text-gray-600 leading-relaxed">
-                    Elite program designed for top-performing students aspiring
+                    Elite program designed for students aspiring
                     for premier engineering and medical colleges with intensive
                     JEE & NEET preparation
                   </p>
